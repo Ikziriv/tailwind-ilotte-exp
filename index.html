@@ -1,0 +1,1470 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>iLotte</title>
+	<meta charset="utf-8">
+	<meta name="theme-color" content="#ffffff">
+	<meta name="viewport" content="width=device-width">
+	<link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Inter:400,700&amp;display=swap" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+</head>
+<body>
+<header class="sm:block md:hidden lg:hidden xl:hidden">
+</header>
+<header class="hidden md:hidden lg:block xl:block">
+<div class="container mx-auto lg:container lg:mx-auto">
+  <div class="w-full bg-white h-10 relative">
+  	<ul class="flex">
+	  <li class="-mb-px mr-1">
+	    <a style="background-color: #363636;" class="inline-block border-l border-t border-r rounded-t py-2 px-16 text-white font-semibold" href="#">iLotte</a>
+	  </li>
+	  <li class="mr-1">
+	    <a style="background-color: #05499b;" class="inline-block border-l border-t border-r rounded-t py-2 px-4 text-white text-sm font-normal" href="#">K-Mall</a>
+	  </li>
+	  <li class="mr-1">
+	    <a style="background-color: #684096;" class="inline-block border-l border-t border-r rounded-t py-2 px-4 text-white text-sm font-normal" href="#">Lotte Avenue</a>
+	  </li>
+	  <li class="mr-1">
+	    <a style="background-color: #1c75f4;" class="inline-block border-l border-t border-r rounded-t py-2 px-4 text-white text-sm font-normal" href="#">Plantes Sports</a>
+	  </li>
+	  <li class="mr-1">
+	    <a style="background-color: #00385c;" class="inline-block border-l border-t border-r rounded-t py-2 px-4 text-white text-sm font-normal" href="#">Kids Station</a>
+	  </li>
+	  <li class="mr-1">
+	    <a style="background-color: #f7f7f7;" class="inline-block border-l border-t border-r rounded-t py-2 px-4 text-gray-800 text-sm font-normal" href="#">Best Denki</a>
+	  </li>
+	  <li class="mr-1">
+	    <a style="background-color: #0d1e3c;" class="inline-block border-l border-t border-r rounded-t py-2 px-4 text-white text-sm font-normal" href="#">Kinokuniya</a>
+	  </li>
+	  <li class="mr-1">
+	    <a style="background-color: #f37022;" class="inline-block border-l border-t border-r rounded-t py-2 px-4 text-white text-sm font-normal" href="#">Lejel Shopping</a>
+	  </li>
+	  <li class="mr-1">
+	    <a style="background-color: #e70016;" class="inline-block border-l border-t border-r rounded-t py-2 px-4 text-white text-sm font-normal" href="#">Lotte Mart</a>
+	  </li>
+	</ul>
+
+	<div class="absolute top-0 right-0 bg-transparent">
+		<div class="h-10 w-auto px-0 py-2">
+			<div class="flex flex-row bg-white">
+			  <div class="text-center bg-transparent w-8 h-8 ml-2">
+			  	<div>
+			  		<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+					width="24" height="24"
+					viewBox="0 0 172 172"
+					style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#666666"><path d="M86,26.875c-20.72315,0 -37.625,16.90185 -37.625,37.625c0,12.95459 6.61377,24.46045 16.62891,31.24219c-19.16943,8.23047 -32.75391,27.25293 -32.75391,49.38281h10.75c0,-15.53711 8.20947,-29.05859 20.49219,-36.61719c3.61133,8.86035 12.40869,15.11719 22.50781,15.11719c10.09912,0 18.89648,-6.25683 22.50781,-15.11719c12.28271,7.55859 20.49219,21.08008 20.49219,36.61719h10.75c0,-22.12988 -13.58447,-41.15234 -32.75391,-49.38281c10.01514,-6.78174 16.62891,-18.2876 16.62891,-31.24219c0,-20.72315 -16.90185,-37.625 -37.625,-37.625zM86,37.625c14.90723,0 26.875,11.96778 26.875,26.875c0,14.90723 -11.96777,26.875 -26.875,26.875c-14.90722,0 -26.875,-11.96777 -26.875,-26.875c0,-14.90722 11.96778,-26.875 26.875,-26.875zM86,102.125c4.40918,0 8.6084,0.62989 12.59766,1.84766c-1.86865,5.18604 -6.73974,8.90234 -12.59766,8.90234c-5.85791,0 -10.72901,-3.71631 -12.59766,-8.90234c3.98926,-1.21777 8.18848,-1.84766 12.59766,-1.84766z"></path></g></g></svg>
+			  	</div>
+			  </div>
+			  <div class="text-center bg-transparent w-8 h-8 py-1 ml-2">
+			  	<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+				width="20" height="20"
+				viewBox="0 0 172 172"
+				style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#666666"><path d="M90.25521,0c-41.4043,0 -75.92188,30.45833 -75.92188,71.66667v19.48438c-3.58333,3.49935 -7.16667,8.81836 -7.16667,16.34896c0,15.0612 14.33333,21.5 14.33333,21.5h7.16667v-57.33333c0,-33.3138 27.04297,-57.33333 61.58854,-57.33333c29.42253,0 53.07813,26.62305 53.07813,57.33333v57.33333h7.16667c0,0 14.33333,-6.4388 14.33333,-21.5c0,-7.5306 -3.58333,-12.84961 -7.16667,-16.34896v-19.48437c0,-38.07292 -29.45052,-71.66667 -67.41146,-71.66667zM46.58333,78.83333c-7.89453,0 -10.75,1.34375 -10.75,1.34375v54.64583c0,0 2.85547,1.34375 10.75,1.34375c7.89453,0 10.75,-1.34375 10.75,-1.34375v-54.64583c0,0 -2.85547,-1.34375 -10.75,-1.34375zM125.41667,78.83333c-7.89453,0 -10.75,1.34375 -10.75,1.34375v54.64583c0,0 2.85547,1.34375 10.75,1.34375c7.89453,0 10.75,-1.34375 10.75,-1.34375v-54.64583c0,0 -2.85547,-1.34375 -10.75,-1.34375zM143.33333,136.16667v17.91667c0,5.9349 -4.8151,10.75 -10.75,10.75h-32.25v-7.16667h-28.66667v14.33333h60.91667c9.82617,0 17.91667,-8.09049 17.91667,-17.91667v-17.91667z"></path></g></g></svg>
+			  </div>
+			  <div class="text-center bg-transparent w-8 h-8 py-1 ml-2">
+			  	<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+				width="19" height="19"
+				viewBox="0 0 172 172"
+				style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#666666"><path d="M121.83333,7.16667h-71.66667c-7.91917,0 -14.33333,6.41417 -14.33333,14.33333v129c0,7.91917 6.41417,14.33333 14.33333,14.33333h71.66667c7.91917,0 14.33333,-6.41417 14.33333,-14.33333v-129c0,-7.91917 -6.41417,-14.33333 -14.33333,-14.33333zM96.75,150.5h-21.5c-1.978,0 -3.58333,-1.60533 -3.58333,-3.58333v0c0,-1.978 1.60533,-3.58333 3.58333,-3.58333h21.5c1.978,0 3.58333,1.60533 3.58333,3.58333v0c0,1.978 -1.60533,3.58333 -3.58333,3.58333zM117.05317,129h-62.10633c-2.6445,0 -4.78017,-2.13567 -4.78017,-4.78017v-90.773c0,-2.6445 2.13567,-4.78017 4.78017,-4.78017h62.1135c2.63733,0 4.773,2.13567 4.773,4.78017v90.78017c0,2.63733 -2.13567,4.773 -4.78017,4.773z"></path></g></g></svg>
+			  </div>
+			  <div class="text-center bg-transparent w-8 h-8 py-1 ml-2">
+			  	<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+				width="20" height="20"
+				viewBox="0 0 172 172"
+				style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g><path d="M86,14.33333c-39.5815,0 -71.66667,32.08517 -71.66667,71.66667h143.33333c0,-39.5815 -32.08517,-71.66667 -71.66667,-71.66667z" fill="#ff3d00"></path><path d="M157.66667,86h-143.33333c0,39.5815 32.08517,71.66667 71.66667,71.66667c39.5815,0 71.66667,-32.08517 71.66667,-71.66667z" fill="#eceff1"></path></g></g></svg>
+			  </div>
+			</div>
+		</div>
+	</div>
+  </div>
+  <!-- ... -->
+</div>
+<div class="flex flex-wrap bg-transparent">
+	<div class="w-full h-auto">
+		<nav class="flex items-center justify-between flex-wrap p-3" style="background-color: #363636;">
+		  <div class="flex items-center flex-shrink-0 text-white mr-6">
+		    <img class="h-16" src="https://www.ilotte.com/static-root/images/common/logo.png" alt="placeholder+image">
+		  </div>
+		  <div class="block lg:hidden">
+		    <button class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">
+		      <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+		    </button>
+		  </div>
+		  <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+		    <div class="px-16 lg:flex-grow">
+		      <form class="w-full bg-white rounded">
+				  <div class="flex items-center py-0">
+				    <input class="appearance-none w-full text-xs text-gray-700 mr-3 py-2 rounded-full px-6 leading-tight focus:outline-none" type="text" placeholder="Apa yang kamu ingin cari hari ini?">
+				    <button class="flex-shrink-0 border-transparent border-4 text-teal-500 hover:text-teal-800 text-sm py-1 px-4 rounded-full" type="button">
+				    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+					width="24" height="24"
+					viewBox="0 0 172 172"
+					style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#cccccc"><path d="M72.24,10.32c-32.33062,0 -58.48,26.14938 -58.48,58.48c0,32.33063 26.14938,58.48 58.48,58.48c11.54281,0 22.22563,-3.38625 31.2825,-9.1375l42.2475,42.2475l14.62,-14.62l-41.71,-41.6025c7.49813,-9.83625 12.04,-22.02406 12.04,-35.3675c0,-32.33062 -26.14937,-58.48 -58.48,-58.48zM72.24,24.08c24.76531,0 44.72,19.95469 44.72,44.72c0,24.76531 -19.95469,44.72 -44.72,44.72c-24.76531,0 -44.72,-19.95469 -44.72,-44.72c0,-24.76531 19.95469,-44.72 44.72,-44.72z"></path></g></g></svg>
+				    </button>
+				  </div>
+			  </form>
+		    </div>
+		    <div>
+		      <a href="#" class="inline-block text-center px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-gray-700 mt-2 lg:mt-0 mr-8">
+			      <div class="block">
+			      	<div class="flex">
+			      		<div class="mr-3">
+			      			<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+							width="20" height="20"
+							viewBox="0 0 172 172"
+							style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#e74c3c"><path d="M74.53333,11.46667c-3.16643,0 -5.73333,2.5669 -5.73333,5.73333c0,28.99347 -40.13333,51.6 -40.13333,91.73333c0,30.48893 33.04404,50.20072 44.67969,51.47683c0.3903,0.08224 0.78811,0.12352 1.18698,0.12317c3.16643,0 5.73333,-2.5669 5.73333,-5.73333c-0.00087,-1.72476 -0.77817,-3.35749 -2.11641,-4.44558c0,-0.00373 0,-0.00746 0,-0.0112c-5.21733,-4.2312 -15.08359,-16.50617 -15.08359,-27.71484c0,-18.39827 17.2,-25.16172 17.2,-25.16172c-9.80973,27.74933 22.33384,31.10217 28.80104,58.5763h0.0112c0.58189,2.62021 2.90371,4.48605 5.58776,4.49036c1.20741,-0.00294 2.38307,-0.38699 3.35938,-1.09739c0.10337,-0.075 0.20421,-0.15343 0.30234,-0.23516c0.93308,-0.60597 25.00495,-16.52664 25.00495,-50.26745c0,-13.775 -6.88956,-37.43579 -11.84739,-47.91589c-0.00409,-0.00866 -0.00711,-0.02496 -0.0112,-0.03359c-0.00372,-0.00747 -0.00745,-0.01494 -0.0112,-0.0224c-0.86395,-2.18853 -2.97733,-3.62704 -5.33021,-3.62812c-2.76275,0.00261 -5.13073,1.97514 -5.63255,4.69192c-0.00001,0.00747 -0.00001,0.01493 0,0.0224c-0.01401,0.06266 -2.64738,11.75767 -11.56745,18.21901c0,-27.01337 -19.50272,-54.91608 -29.78646,-66.45964c-0.15433,-0.20902 -0.32269,-0.40731 -0.50391,-0.59349c-1.0775,-1.11376 -2.55997,-1.74391 -4.10964,-1.74687z"></path></g></g></svg>
+			      		</div><span class="font-bold text-white text-sm uppercase">Brand <br> Suprise</span>
+			      	</div>
+			      </div>
+			      <div class="block mt-1">
+			      	<div class="flex">
+			      		<small class="text-xs text-white uppercase mr-3">Shop Now</small>
+			      		<div>
+			      			<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+							width="12" height="12"
+							viewBox="0 0 172 172"
+							style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M45.96745,6.95671l-24.46745,14.75326l38.39486,64.29004l-38.39486,64.29004l24.46745,14.75326l47.19922,-79.0433zM103.30078,6.95671l-24.46744,14.75326l38.39486,64.29004l-38.39486,64.29004l24.46744,14.75326l47.19922,-79.0433z"></path></g></g></svg>
+			      		</div>
+			      	</div>
+			      </div>
+			  </a>
+		    </div>
+		  </div>
+		</nav>
+	</div>
+</div>
+<div class="flex flex-wrap">
+	<div class="w-full h-auto py-1 bg-white shadow-sm border-b-2">
+		<nav class="flex items-center justify-between flex-wrap bg-white p-4">
+		  <div class="flex items-center flex-shrink-0 text-white ml-8 mr-6">
+		    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+			width="16" height="16"
+			viewBox="0 0 172 172"
+			style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#666666"><path d="M0,25.8v17.2h172v-17.2zM0,77.4v17.2h172v-17.2zM0,129v17.2h172v-17.2z"></path></g></g></svg>
+		    <span class="font-semibold text-xs uppercase tracking-tight ml-6 text-gray-700">Categories</span>
+		  </div>
+		  <div class="block lg:hidden">
+		    <button class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">
+		      <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+		    </button>
+		  </div>
+		  <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+		    <div class="mr-10 text-sm lg:flex-grow flex justify-end">
+		      <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-gray-700 hover:text-gray-900 mr-6">
+		        <div class="flex">
+		        	<img class="h-4 mr-3" src="https://www.ilotte.com/static-root/images//common/digital-icon/Group_99.png" alt="placeholder+image"> <span class="text-xs font-semibold">Brand Mall</span>
+		        </div>
+		      </a>
+		      <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-gray-700 hover:text-gray-900 mr-6">
+		        <div class="flex">
+		        	<img class="h-4 mr-3" src="https://www.ilotte.com/static-root/images//common/digital-icon/television.png" alt="placeholder+image"> <span class="text-xs font-semibold">TV Home Shopping Best</span>
+		        </div>
+		      </a>
+		      <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-gray-700 hover:text-gray-900 mr-6">
+		        <div class="flex">
+		        	<img class="h-4 mr-3" src="https://www.ilotte.com/static-root/images//common/digital-icon/smartphone.png" alt="placeholder+image"> <span class="text-xs font-semibold">Pulsa</span>
+		        </div>
+		      </a>
+		      <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-gray-700 hover:text-gray-900 mr-6">
+		        <div class="flex">
+		        	<img class="h-4 mr-3" src="https://www.ilotte.com/static-root/images//common/digital-icon/shopping-bag.png" alt="placeholder+image"> <span class="text-xs font-semibold">Promo</span>
+		        </div>
+		      </a>
+		      <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-gray-700 hover:text-gray-900 mr-6">
+		        <div class="flex">
+		        	<img class="h-4 mr-3" src="https://www.ilotte.com/static-root/images//common/digital-icon/evoucher_new.png" alt="placeholder+image"> <span class="text-xs font-semibold">E-Voucher</span>
+		        </div>
+		      </a>
+		      <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-gray-700 hover:text-gray-900">
+		        <div class="flex">
+		        	<img class="h-4 mr-3" src="https://www.ilotte.com/static-root/images//common/digital-icon/instagram.png" alt="placeholder+image"> <span class="text-xs font-semibold">@ilotte_id</span>
+		        </div>
+		      </a>
+		    </div>
+		  </div>
+		</nav>
+	</div>
+</div>
+</header>
+
+<main class="w-full h-auto">
+<div class="fixed w-full h-16 z-20 hidden xl:block" style="margin-top: 415px;">
+	<div class="absolute inset-x-0 bottom-0">
+	  <div class="h-16 w-full" style="background-color: #131313;">
+  		<div class="flex flex-wrap">
+  			<div class="w-6/12 h-16">
+			  	<div class="flex justify-start ml-16">
+			  		<div class="flex flex-row py-1">
+					  <div class="border border-white bg-transparent px-4 py-2 m-2">
+					  	<div class="py-1">
+					  		<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+							width="16" height="16"
+							viewBox="0 0 172 172"
+							style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M119.71469,116.27469c-5.84531,-2.40531 -13.07469,-5.50937 -13.07469,-7.91469v-15.48c8.6,-6.53062 13.76,-16.85062 13.76,-27.52v-20.64c0,-18.92 -15.48,-34.4 -34.4,-34.4c-18.92,0 -34.4,15.48 -34.4,34.4v20.64c0,10.66938 5.16,21.32531 13.76,27.52v15.48c0,2.06938 -7.22937,5.16 -13.07469,7.91469c-14.09594,5.84531 -35.08531,14.79469 -35.08531,38.52531v3.44h137.6v-3.44c0,-23.73062 -20.98937,-32.68 -35.08531,-38.52531z"></path></g></g></svg>
+					  	</div>
+					  </div>
+					  <div class="border border-white bg-transparent px-4 py-2 m-2">
+					  	<div class="py-1">
+					  		<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+							width="16" height="16"
+							viewBox="0 0 172 172"
+							style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M39.41667,21.5c-21.77233,0 -39.41667,17.64433 -39.41667,39.41667c0,8.42368 2.6671,16.21476 7.16667,22.61979v45.46354h14.33333c0,11.87517 9.62483,21.5 21.5,21.5c11.87517,0 21.5,-9.62483 21.5,-21.5h43c0,11.87517 9.62483,21.5 21.5,21.5c11.87517,0 21.5,-9.62483 21.5,-21.5h14.33333v-35.83333l-19.52636,-39.03874c-1.21117,-2.4295 -3.68064,-3.96126 -6.39682,-3.96126h-24.24349v-14.33333h-44.84766c-7.22918,-8.75117 -18.16251,-14.33333 -30.40234,-14.33333zM39.41667,34.04167c14.82067,0 26.875,12.05433 26.875,26.875c0,14.82067 -12.05433,26.875 -26.875,26.875c-14.82067,0 -26.875,-12.05433 -26.875,-26.875c0,-14.82067 12.05433,-26.875 26.875,-26.875zM39.47266,43.65788l-6.18685,18.68652l12.61165,12.80762l7.65657,-7.5306l-8.00651,-8.13249l4.12923,-12.45768zM114.66667,62.70833h20.91211l15.22917,30.45833h-36.14128zM43,120.04167c4.93783,0 8.95833,4.0205 8.95833,8.95833c0,4.93783 -4.0205,8.95833 -8.95833,8.95833c-4.93783,0 -8.95833,-4.0205 -8.95833,-8.95833c0,-4.93783 4.0205,-8.95833 8.95833,-8.95833zM129,120.04167c4.93783,0 8.95833,4.0205 8.95833,8.95833c0,4.93783 -4.0205,8.95833 -8.95833,8.95833c-4.93783,0 -8.95833,-4.0205 -8.95833,-8.95833c0,-4.93783 4.0205,-8.95833 8.95833,-8.95833z"></path></g></g></svg>
+					  	</div>
+					  </div>
+					  <div class="border border-white bg-transparent px-4 py-2 m-2">
+					  	<div class="py-1">
+					  		<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+							width="16" height="16"
+							viewBox="0 0 172 172"
+							style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M68.8,10.32c-0.91375,0 -1.78719,0.36281 -2.43219,1.00781l-5.87219,5.87219h-28.20531c-6.38281,0 -11.97281,4.43438 -13.41063,10.66938l-7.86094,34.05062h-4.13875c-3.78937,0 -6.88,3.09063 -6.88,6.88v10.32c0,3.78938 3.09063,6.88 6.88,6.88h158.24c3.78938,0 6.88,-3.09062 6.88,-6.88v-10.32c0,-3.78937 -3.09062,-6.88 -6.88,-6.88h-4.13875l-7.86094,-34.05062c-1.43781,-6.235 -7.02781,-10.66938 -13.41063,-10.66938h-28.20531l-5.87219,-5.87219c-0.645,-0.645 -1.51844,-1.00781 -2.43219,-1.00781zM70.22438,17.2h31.55125l5.87219,5.87219c0.645,0.645 1.51844,1.00781 2.43219,1.00781h29.62969c3.225,0 5.97969,2.19031 6.70531,5.33469l7.49813,32.50531h-135.82625l7.49812,-32.50531c0.72563,-3.13094 3.48031,-5.33469 6.70531,-5.33469h29.62969c0.91375,0 1.78719,-0.36281 2.43219,-1.00781zM9.52719,92.88l17.40156,60.34781c0.83313,2.9025 3.9775,5.01219 7.47125,5.01219h103.2c3.49375,0 6.63813,-2.10969 7.47125,-5.01219l17.40156,-60.34781zM58.48,103.2c1.89469,0 3.44,1.54531 3.44,3.44v37.84c0,1.89469 -1.54531,3.44 -3.44,3.44c-1.89469,0 -3.44,-1.54531 -3.44,-3.44v-37.84c0,-1.89469 1.54531,-3.44 3.44,-3.44zM86,103.2c1.89469,0 3.44,1.54531 3.44,3.44v37.84c0,1.89469 -1.54531,3.44 -3.44,3.44c-1.89469,0 -3.44,-1.54531 -3.44,-3.44v-37.84c0,-1.89469 1.54531,-3.44 3.44,-3.44zM113.52,103.2c1.89469,0 3.44,1.54531 3.44,3.44v37.84c0,1.89469 -1.54531,3.44 -3.44,3.44c-1.89469,0 -3.44,-1.54531 -3.44,-3.44v-37.84c0,-1.89469 1.54531,-3.44 3.44,-3.44z"></path></g></g></svg>
+					  	</div>
+					  </div>
+					  <div class="border border-white bg-transparent px-4 py-2 m-2">
+					  	<div class="py-1">
+					  		<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+							width="16" height="16"
+							viewBox="0 0 172 172"
+							style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M86,161.68l-2.20375,-1.81406c-4.17906,-3.46687 -9.83625,-7.22937 -16.39375,-11.58312c-25.54469,-16.97156 -60.5225,-40.205 -60.5225,-79.81875c0,-24.46969 20.06219,-44.38406 44.72,-44.38406c13.39719,0 25.94781,5.92594 34.4,16.04438c8.45219,-10.11844 21.00281,-16.04438 34.4,-16.04438c24.65781,0 44.72,19.91438 44.72,44.38406c0,39.61375 -34.97781,62.84719 -60.5225,79.81875c-6.5575,4.35375 -12.21469,8.11625 -16.39375,11.58312z"></path></g></g></svg>
+					  	</div>
+					  </div>
+					  <div class="border border-white bg-transparent px-4 py-2 m-2">
+					  	<div class="py-1">
+					  		<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+							width="16" height="16"
+							viewBox="0 0 172 172"
+							style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M6.88,86c0,43.69875 35.42125,79.12 79.12,79.12c43.69875,0 79.12,-35.42125 79.12,-79.12c0,-43.69875 -35.42125,-79.12 -79.12,-79.12c-15.8025,0 -30.48969,4.68969 -42.83875,12.67156v-5.63031c0,-5.6975 -4.63594,-10.32 -10.32,-10.32c-5.6975,0 -10.32,4.6225 -10.32,10.32v24.88625c-9.82281,13.18219 -15.64125,29.49531 -15.64125,47.1925zM13.76,85.83875c0,-11.36812 2.71438,-22.83031 7.87438,-33.12344l6.15437,3.09062c-4.67625,9.33906 -7.14875,19.72625 -7.14875,30.03281c0,36.03938 29.32063,65.36 65.36,65.36c36.03938,0 65.36,-29.30719 65.36,-65.36c0,-36.03937 -29.32062,-65.36 -65.36,-65.36c-16.97156,0 -33.06969,6.5575 -45.13656,18.14063h20.11594c1.90812,0 3.44,1.54531 3.44,3.44c0,1.89469 -1.53188,3.44 -3.44,3.44h-31.57813v-31.57813c0,-1.90812 1.53188,-3.44 3.44,-3.44c1.89469,0 3.44,1.53188 3.44,3.44v19.565c13.30313,-12.71187 31.05406,-19.8875 49.71875,-19.8875c39.82875,0 72.24,32.41125 72.24,72.24c0,39.84219 -32.41125,72.24 -72.24,72.24c-39.82875,0 -72.24,-32.39781 -72.24,-72.24zM82.56,80.07406v-49.11406h6.88v49.11406c2.0425,1.19594 3.44,3.38625 3.44,5.92594c0,3.80281 -3.07719,6.88 -6.88,6.88c-0.61812,0 -1.19594,-0.1075 -1.76031,-0.25531l-23.3275,23.3275l-4.86437,-4.86437l23.3275,-23.3275c-0.14781,-0.56438 -0.25531,-1.14219 -0.25531,-1.76031c0,-2.53969 1.38406,-4.73 3.44,-5.92594z"></path></g></g></svg>
+					  	</div>
+					  </div>
+					</div>
+			  	</div>
+  			</div>
+  			<div class="w-6/12 h-16">
+			  	<div class="flex justify-end mr-16">
+			  		<div class="flex flex-row py-1">
+					  <div class="border border-white bg-transparent px-4 py-2 m-2">
+					  	<div class="py-1">
+					  		<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+							width="16" height="16"
+							viewBox="0 0 172 172"
+							style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M65.36,0c-35.70344,0 -65.36,25.77313 -65.36,58.1575c0,15.66813 7.02781,29.87156 18.275,40.3125c-1.65281,4.87781 -5.16,8.76125 -8.9225,11.825c-2.09625,1.70656 -4.13875,3.17125 -5.805,4.6225c-0.83312,0.72563 -1.59906,1.37063 -2.2575,2.365c-0.65844,0.99438 -1.33031,2.71438 -0.86,4.4075l0.43,1.29l1.1825,0.7525c3.57438,2.02906 7.91469,2.2575 12.47,1.935c4.55531,-0.3225 9.47344,-1.35719 14.2975,-2.6875c6.65156,-1.8275 12.34906,-4.00437 17.0925,-5.9125c9.59438,22.2525 33.49969,37.0875 60.7375,37.0875c4.6225,0 9.28531,-0.63156 13.6525,-1.29c4.70313,2.08281 25.22219,10.8575 39.4525,10.8575c4.085,0 7.25625,-0.72562 9.7825,-2.15l1.29,-0.7525l0.3225,-1.29c1.00781,-3.68187 -2.10969,-6.26187 -6.1275,-9.46c-4.04469,-3.21156 -9.39281,-7.48469 -11.7175,-13.4375c11.7175,-10.80375 18.3825,-25.4775 18.3825,-40.635c0,-24.75187 -18.06,-47.11187 -44.075,-55.04c-8.21031,-23.85156 -33.15031,-40.9575 -62.2425,-40.9575zM65.36,6.88c26.20313,0 48.06594,15.13063 55.47,35.7975c0.02688,0.08063 0.08063,0.13438 0.1075,0.215c0.04031,0.1075 0.06719,0.215 0.1075,0.3225c0.47031,1.35719 0.84656,2.6875 1.1825,4.085c0.24188,0.9675 0.36281,1.90813 0.5375,2.9025c0.04031,0.25531 0.06719,0.49719 0.1075,0.7525c0.14781,0.91375 0.33594,1.86781 0.43,2.795c0.01344,0.13438 -0.01344,0.29563 0,0.43c0.1075,1.30344 0.215,2.64719 0.215,3.9775c0,1.76031 -0.12094,3.44 -0.3225,5.16c-0.20156,1.74688 -0.47031,3.46688 -0.86,5.16c-0.77937,3.3325 -1.96187,6.50375 -3.44,9.5675c-1.47812,3.06375 -3.26531,5.97969 -5.375,8.7075c-1.04812,1.35719 -2.24406,2.71438 -3.44,3.9775c-1.19594,1.26313 -2.43219,2.49938 -3.7625,3.655c-1.30344,1.14219 -2.66062,2.29781 -4.085,3.3325c-7.22937,5.22719 -15.96375,8.93594 -25.4775,10.6425c-3.80281,0.68531 -7.68625,1.075 -11.7175,1.075c-2.32469,0 -4.63594,-0.12094 -6.88,-0.3225c-0.1075,-0.01344 -0.215,0.01344 -0.3225,0c-0.29562,-0.02687 -0.57781,-0.08062 -0.86,-0.1075c-0.79281,-0.09406 -1.6125,-0.20156 -2.365,-0.3225c-1.02125,-0.16125 -1.96187,-0.3225 -2.9025,-0.5375l-1.075,-0.3225l-1.075,0.43c-4.43437,1.86781 -13.47781,5.67063 -22.575,8.17c-4.55531,1.24969 -9.15094,2.19031 -13.0075,2.4725c-1.70656,0.12094 -2.41875,-0.38969 -3.7625,-0.5375c1.10188,-0.86 2.02906,-1.54531 3.44,-2.6875c4.58219,-3.73562 10.22594,-9.1375 12.04,-17.2l0.43,-2.0425l-1.505,-1.3975c-11.00531,-9.39281 -17.7375,-22.4675 -17.7375,-36.8725c0,-28.165 26.06875,-51.2775 58.48,-51.2775z"></path></g></g></svg>
+					  	</div>
+					  </div>
+					  <div class="border border-white bg-transparent px-4 py-2 m-2">
+					  	<div class="py-1">
+					  		<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+							width="16" height="16"
+							viewBox="0 0 172 172"
+							style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M86,20.64c-5.65719,0 -10.32,4.66281 -10.32,10.32v4.68969c-16.60875,4.085 -27.52,18.06 -27.52,36.80531v26.83469c0,7.47125 -4.4075,15.93688 -6.94719,20.16969l-6.235,9.3525c-0.69875,1.04812 -0.77938,2.41875 -0.17469,3.53406c0.60469,1.11531 1.77375,1.81406 3.03687,1.81406h96.32c1.26313,0 2.43219,-0.69875 3.03688,-1.81406c0.60469,-1.11531 0.52406,-2.4725 -0.17469,-3.53406l-6.14094,-9.21813c-4.74344,-7.88781 -7.04125,-14.37812 -7.04125,-19.83375v-26.83469c0,-18.97375 -10.91125,-33.12344 -27.52,-37.24875v-4.71656c0,-5.65719 -4.66281,-10.32 -10.32,-10.32zM86,27.52c1.90813,0 3.44,1.53188 3.44,3.44v3.60125c-1.12875,-0.09406 -2.27094,-0.16125 -3.44,-0.16125c-1.16906,0 -2.31125,0.06719 -3.44,0.16125v-3.60125c0,-1.90812 1.53188,-3.44 3.44,-3.44zM11.97281,32.59938c-7.67281,12.47 -11.97281,27.31844 -11.97281,43.08062c0,15.76219 4.3,30.61063 11.97281,43.08063l5.87219,-3.60125c-7.00094,-11.38156 -10.965,-24.96688 -10.965,-39.47938c0,-14.5125 3.96406,-28.09781 10.965,-39.47937zM160.02719,32.59938l-5.87219,3.60125c7.00094,11.38156 10.965,24.96687 10.965,39.47937c0,14.5125 -3.96406,28.09781 -10.965,39.47938l5.87219,3.60125c7.67281,-12.47 11.97281,-27.31844 11.97281,-43.08063c0,-15.76219 -4.3,-30.61062 -11.97281,-43.08062zM26.88844,41.76375c-6.26187,10.11844 -9.68844,21.37906 -9.68844,33.91625c0,12.63125 3.88344,24.24125 9.66156,33.87594l5.89906,-3.5475c-5.21375,-8.7075 -8.68063,-19.10812 -8.68063,-30.32844c0,-11.31437 2.99656,-21.15062 8.65375,-30.30156zM145.11156,41.76375l-5.84531,3.61469c5.65719,9.15094 8.65375,18.98719 8.65375,30.30156c0,11.22031 -3.46687,21.62094 -8.69406,30.32844l5.9125,3.5475c5.77813,-9.63469 9.66156,-21.24469 9.66156,-33.87594c0,-12.53719 -3.42656,-23.79781 -9.68844,-33.91625zM70.25125,141.04c2.67406,6.06031 8.7075,10.32 15.74875,10.32c7.04125,0 13.07469,-4.25969 15.74875,-10.32z"></path></g></g></svg>
+					  	</div>
+					  </div>
+					</div>
+			  	</div>
+  			</div>
+  		</div>
+	  </div>
+	</div>
+</div>
+<div class="flex flex-wrap px-0 xl:px-6">
+	<div class="w-3/12 h-auto bg-transparent hidden md:hidden lg:block xl:block">
+		<div class="bg-transparent p-6">
+		  <span class="block text-gray-700 text-center bg-white px-4 py-2 border border-b-0 border-gray-400">
+		  	<div class="flex relative">
+		  		<div class="mr-2">
+		  			<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+					width="20" height="20"
+					viewBox="0 0 172 172"
+					style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#666666"><path d="M50.12292,33.59375c-8.19687,0 -15.99167,3.22395 -21.90417,9.00208l-18.94635,19.08282c-0.80625,0.67188 -1.2099,1.74635 -1.2099,2.82135c0,1.075 0.40365,2.14947 1.2099,2.82135l13.4375,13.4375c1.6125,1.6125 4.16457,1.6125 5.6427,0c1.6125,-1.6125 1.6125,-4.16457 0,-5.6427l-10.61615,-10.61615l16.125,-16.125c4.3,-4.3 10.07813,-6.71875 16.125,-6.71875h12.09375c1.88125,11.42188 11.82605,20.15625 23.9198,20.15625c12.09375,0 21.90417,-8.73437 23.9198,-20.15625h12.09375c6.04688,0 11.825,2.41875 16.125,6.71875l16.125,16.125l-10.61615,10.61615c-1.6125,1.6125 -1.6125,4.16457 0,5.6427c0.80625,0.80625 1.88073,1.2099 2.82135,1.2099c0.94063,0 2.0151,-0.40365 2.82135,-1.2099l13.4375,-13.4375c0.80625,-0.80625 1.2099,-1.74635 1.2099,-2.82135c0,-1.075 -0.40365,-2.14947 -1.2099,-2.82135l-18.94635,-19.08282c-5.77812,-5.77813 -13.57292,-9.00208 -21.90417,-9.00208h-15.72083c-2.28437,0 -4.03125,1.74688 -4.03125,4.03125c0,8.86875 -7.25625,16.125 -16.125,16.125c-8.86875,0 -16.125,-7.25625 -16.125,-16.125c0,-2.28437 -1.74688,-4.03125 -4.03125,-4.03125zM38.96875,73.90625c-2.28437,0 -4.03125,1.74688 -4.03125,4.03125v79.28125c0,2.95625 2.41875,5.375 5.375,5.375h91.375c2.95625,0 5.375,-2.41875 5.375,-5.375v-79.28125c0,-2.28437 -1.74687,-4.03125 -4.03125,-4.03125c-2.28438,0 -4.03125,1.74688 -4.03125,4.03125v76.59375h-86v-76.59375c0,-2.28437 -1.74688,-4.03125 -4.03125,-4.03125zM110.1875,80.625c-2.2264,0 -4.03125,1.80485 -4.03125,4.03125c0,2.2264 1.80485,4.03125 4.03125,4.03125c2.2264,0 4.03125,-1.80485 4.03125,-4.03125c0,-2.2264 -1.80485,-4.03125 -4.03125,-4.03125z"></path></g></g></svg>
+		  		</div> <span class="font-semibold text-sm">Fashion</span>
+		  		<div class="absolute inset-y-0 right-0 bg-white">
+				    <div class="flex justify-end w-10 bg-transparent py-1">
+				    	<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+						width="12" height="12"
+						viewBox="0 0 172 172"
+						style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#333333"><path d="M72.39453,11.00196l-7.72656,7.55859l60.84668,62.06445l-60.84668,62.10645l7.72656,7.4746l68.15332,-69.58105z"></path></g></g></svg>
+				    </div>
+				</div>
+		  	</div>
+		  </span>
+		  <span class="block text-gray-700 text-center bg-white px-4 py-2 border border-b-0 border-gray-400">
+		  	<div class="flex relative">
+		  		<div class="mr-2">
+		  			<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+					width="20" height="20"
+					viewBox="0 0 172 172"
+					style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#333333"><path d="M86,6.61538c-15.94411,0 -30.46695,4.88401 -41.34615,13.02404c-10.87921,8.14003 -18.19231,19.94952 -18.19231,33.28365c0,13.33413 7.3131,25.14363 18.19231,33.28365c1.91226,1.44712 4.08294,2.71334 6.20192,3.92788c-3.30769,0.87861 -6.40865,1.96394 -9.30288,3.10096c-5.91767,2.29988 -10.98257,5.09074 -14.88462,8.68269c-3.90204,3.59195 -6.82212,8.34676 -6.82212,13.85096v16.125c0,13.4375 19.5619,33.49038 66.15385,33.49038c46.59195,0 66.15385,-20.38882 66.15385,-33.49038v-16.125c0,-5.50421 -2.92007,-10.25901 -6.82212,-13.85096c-3.90204,-3.59195 -8.96695,-6.38281 -14.88462,-8.68269c-2.89423,-1.13702 -5.99519,-2.22235 -9.30288,-3.10096c2.11899,-1.21454 4.28967,-2.48077 6.20192,-3.92788c10.87921,-8.14003 18.19231,-19.94952 18.19231,-33.28365c0,-13.33413 -7.3131,-25.14363 -18.19231,-33.28365c-10.87921,-8.14003 -25.40204,-13.02404 -41.34615,-13.02404zM86,19.84615c13.28246,0 25.19531,4.13462 33.49038,10.33654c8.29507,6.20192 12.81731,14.16106 12.81731,22.74038c0,8.57933 -4.52224,16.53846 -12.81731,22.74038c-8.29507,6.20192 -20.20793,10.33654 -33.49038,10.33654c-13.28245,0 -25.19531,-4.13462 -33.49038,-10.33654c-8.29507,-6.20192 -12.81731,-14.16106 -12.81731,-22.74038c0,-8.57933 4.52224,-16.53846 12.81731,-22.74038c8.29507,-6.20192 20.20794,-10.33654 33.49038,-10.33654zM87.03365,29.14904c-0.15504,0.05169 -0.28426,0.12921 -0.41346,0.20673c-0.15504,0.05169 -0.28426,0.12921 -0.41346,0.20673c-0.46514,0.12921 -0.8786,0.33594 -1.24038,0.62019l-26.46154,16.95192c-1.55048,1.03365 -1.96394,3.10096 -0.93029,4.65144c1.03365,1.55048 3.10096,1.96394 4.65144,0.93029l26.46154,-16.95192c1.83474,-0.46514 2.94592,-2.29988 2.48077,-4.13462c-0.46514,-1.83474 -2.29988,-2.94591 -4.13462,-2.48077zM106.05288,35.97115c-0.23257,0.10337 -0.4393,0.25842 -0.62019,0.41346l-42.37981,27.49519c-1.11118,0.56851 -1.78305,1.73137 -1.75721,2.97176c0,1.24038 0.72356,2.3774 1.83474,2.92007c1.11118,0.54267 2.42908,0.4393 3.4369,-0.3101l42.37981,-27.49519c1.31791,-0.8786 1.8089,-2.55829 1.21454,-4.00541c-0.59435,-1.47296 -2.14483,-2.29988 -3.69531,-1.98978c-0.12921,0 -0.28426,0 -0.41346,0zM111.63462,52.30288c-0.15504,0.05169 -0.28426,0.12921 -0.41346,0.20673c-0.51683,0.07753 -1.03365,0.3101 -1.44712,0.62019l-26.46154,16.95192c-1.55048,1.03365 -1.96394,3.10096 -0.93029,4.65144c1.03365,1.55048 3.10096,1.96394 4.65144,0.93029l26.46154,-16.95192c1.57632,-0.56851 2.48077,-2.22235 2.11899,-3.85036c-0.36178,-1.62801 -1.88642,-2.73919 -3.56611,-2.55829c-0.12921,0 -0.28426,0 -0.41346,0zM86,99.23077c15.73738,0 29.97596,2.63582 39.69231,6.40865c4.85817,1.88642 8.63101,4.03125 10.75,5.99519c2.11899,1.96394 2.48077,3.23017 2.48077,4.13462c0,0.90445 -0.36178,2.17067 -2.48077,4.13462c-2.11899,1.96394 -5.89183,4.10878 -10.75,5.99519c-9.71635,3.77284 -23.95493,6.40865 -39.69231,6.40865c-15.73738,0 -29.97596,-2.63581 -39.69231,-6.40865c-4.85817,-1.88642 -8.63101,-4.03125 -10.75,-5.99519c-2.11899,-1.96394 -2.48077,-3.23017 -2.48077,-4.13462c0,-0.90445 0.36178,-2.17067 2.48077,-4.13462c2.11899,-1.96394 5.89183,-4.10878 10.75,-5.99519c9.71635,-3.77283 23.95493,-6.40865 39.69231,-6.40865zM86,105.84615c-21.91346,0 -39.69231,4.44471 -39.69231,9.92308c0,5.47837 17.77885,9.92308 39.69231,9.92308c21.91346,0 39.69231,-4.44471 39.69231,-9.92308c0,-5.47837 -17.77885,-9.92308 -39.69231,-9.92308z"></path></g></g></svg>
+		  		</div> <span class="font-semibold text-sm">Kecantikan & Kesehatan</span>
+		  		<div class="absolute inset-y-0 right-0 bg-white">
+				    <div class="flex justify-end w-10 bg-transparent py-1">
+				    	<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+						width="12" height="12"
+						viewBox="0 0 172 172"
+						style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#333333"><path d="M72.39453,11.00196l-7.72656,7.55859l60.84668,62.06445l-60.84668,62.10645l7.72656,7.4746l68.15332,-69.58105z"></path></g></g></svg>
+				    </div>
+				</div>
+		  	</div>
+		  </span>
+		  <span class="block text-gray-700 text-center bg-white px-4 py-2 border border-b-0 border-gray-400">
+		  	<div class="flex relative">
+		  		<div class="mr-2">
+		  			<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+					width="20" height="20"
+					viewBox="0 0 172 172"
+					style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#333333"><path d="M137.6,3.44c-17.06562,0 -30.96,13.89438 -30.96,30.96c0,1.98875 0.18813,3.93719 0.5375,5.805c0.18813,1.41094 -0.84656,2.56656 -2.15,3.87c-2.29781,2.29781 -11.18,11.18 -11.18,11.18c-0.25531,0.25531 -0.47031,0.5375 -0.645,0.86c-5.64375,-6.49031 -10.87094,-12.81937 -15.05,-18.1675c-3.37281,-4.32687 -6.19469,-7.98187 -8.385,-10.535c-1.08844,-1.27656 -2.02906,-2.31125 -3.01,-3.1175c-0.49719,-0.40312 -0.92719,-0.7525 -1.8275,-1.075c-0.90031,-0.3225 -2.91594,-0.3225 -4.085,0.86l-3.1175,3.1175c-2.96969,2.96969 -3.89687,7.01438 -3.44,10.75c0.45688,3.73563 2.02906,7.33688 3.9775,10.8575c3.89688,7.02781 9.43313,13.88094 12.1475,18.275c-0.1075,-0.16125 -0.01344,0.13438 0.1075,0.645c-4.89125,-1.53187 -10.09156,-2.365 -15.48,-2.365c-28.46062,0 -51.6,23.13938 -51.6,51.6c0,28.46063 23.13938,51.6 51.6,51.6c28.46063,0 51.6,-23.13937 51.6,-51.6c0,-5.29437 -0.86,-10.44094 -2.365,-15.265c0.71219,0.14781 1.29,0.28219 1.1825,0.215c4.34031,2.63375 11.03219,8.12969 17.9525,11.9325c3.45344,1.89469 7.05469,3.44 10.75,3.87c3.69531,0.43 7.69969,-0.49719 10.6425,-3.44l3.1175,-3.1175c1.10188,-1.10187 1.15563,-3.03687 0.86,-3.9775c-0.29562,-0.94062 -0.67187,-1.53187 -1.075,-2.0425c-0.80625,-1.02125 -1.73344,-1.90812 -3.01,-3.01c-2.55312,-2.21719 -6.20812,-5.02562 -10.535,-8.385c-5.40187,-4.1925 -11.85187,-9.29875 -18.3825,-14.9425c0.36281,-0.16125 0.68531,-0.37625 0.9675,-0.645c0,0 8.76125,-8.86875 11.0725,-11.18c0.80625,-0.80625 1.45125,-1.47812 2.0425,-1.8275c0.59125,-0.34937 0.98094,-0.5375 2.15,-0.3225c0.04031,0 0.06719,0 0.1075,0c1.76031,0.3225 3.56094,0.5375 5.4825,0.5375c17.05219,0 30.96,-13.89437 30.96,-30.96c0,-17.06562 -13.89437,-30.96 -30.96,-30.96zM137.6,10.32c13.34344,0 24.08,10.73656 24.08,24.08c0,13.34344 -10.73656,24.08 -24.08,24.08c-1.43781,0 -2.87562,-0.17469 -4.3,-0.43c-2.70094,-0.48375 -5.16,0.17469 -6.88,1.1825c-1.72,1.00781 -2.84875,2.31125 -3.44,2.9025c-2.29781,2.29781 -11.18,11.0725 -11.18,11.0725c-0.38969,0.38969 -0.68531,0.87344 -0.86,1.3975c-2.33812,-2.12312 -4.63594,-4.31344 -6.88,-6.5575c-2.28437,-2.27094 -4.50156,-4.63594 -6.665,-6.9875c0.52406,-0.17469 1.00781,-0.47031 1.3975,-0.86c0,0 8.76125,-8.86875 11.0725,-11.18c1.38406,-1.38406 4.87781,-4.82406 4.1925,-9.7825c-0.04031,-0.04031 -0.06719,-0.06719 -0.1075,-0.1075c-0.29562,-1.53187 -0.43,-3.13094 -0.43,-4.73c0,-13.34344 10.73656,-24.08 24.08,-24.08zM63.64,30.96c0.33594,0.36281 0.5375,0.47031 0.9675,0.9675c1.96188,2.28438 4.67625,5.87219 8.0625,10.2125c6.7725,8.68063 15.92344,20.25031 26.445,30.745c10.45438,10.41406 22.06438,19.59188 30.745,26.3375c4.34031,3.37281 8.04906,6.10063 10.32,8.0625c0.51063,0.44344 0.60469,0.61813 0.9675,0.9675l-1.1825,1.1825c-1.42437,1.42438 -2.82187,1.76031 -5.0525,1.505c-2.23062,-0.25531 -5.13312,-1.45125 -8.17,-3.1175c-6.07375,-3.34594 -12.56406,-8.57312 -17.7375,-11.7175c-1.88125,-1.14219 -3.85656,-1.53187 -6.235,-1.505c-1.46469,0.01344 -3.07719,0.29563 -4.6225,0.9675c-0.1075,0.02688 -0.215,0.06719 -0.3225,0.1075c-0.87344,0.41656 -1.70656,0.95406 -2.4725,1.72c-2.51281,2.52625 -8.385,8.385 -8.385,8.385c-1.1825,1.1825 -1.8275,1.24969 -2.9025,1.075c-1.075,-0.17469 -2.59344,-0.98094 -4.085,-2.4725l-12.1475,-12.04c-1.47812,-1.47812 -2.29781,-3.10406 -2.4725,-4.1925c-0.17469,-1.08844 -0.1075,-1.72 1.075,-2.9025c0,0 5.85875,-5.85875 8.385,-8.385c2.15,-2.15 2.72781,-4.98531 2.795,-7.31c0.06719,-2.32469 -0.1075,-4.20594 -1.29,-6.1275c-3.21156,-5.20031 -8.6,-11.75781 -12.04,-17.9525c-1.72,-3.10406 -2.94281,-5.99312 -3.225,-8.2775c-0.28219,-2.28437 0.06719,-3.72219 1.505,-5.16zM55.04,72.24c4.48813,0 8.72094,0.69875 12.7925,1.935c-2.13656,2.13656 -4.00437,4.00438 -4.945,4.945c-2.53969,-0.52406 -5.16,-0.86 -7.8475,-0.86c-21.33875,0 -38.7,17.36125 -38.7,38.7c0,21.33875 17.36125,38.7 38.7,38.7c21.33875,0 38.7,-17.36125 38.7,-38.7c0,-2.51281 -0.38969,-4.93156 -0.86,-7.31c0.7525,-0.7525 2.91594,-2.91594 5.16,-5.16c1.15563,3.96406 1.72,8.11625 1.72,12.47c0,24.73844 -19.98156,44.72 -44.72,44.72c-24.73844,0 -44.72,-19.98156 -44.72,-44.72c0,-24.73844 19.98156,-44.72 44.72,-44.72zM55.04,85.14c1.27656,0 2.52625,0.06719 3.7625,0.215c-0.33594,1.33031 -0.43,2.67406 -0.215,3.9775c0.49719,3.05031 2.20375,5.65719 4.4075,7.8475l12.04,12.1475c2.19031,2.20375 4.79719,3.91031 7.8475,4.4075c1.20938,0.20156 2.49938,0.08063 3.7625,-0.215c0.12094,1.11531 0.215,2.28438 0.215,3.44c0,17.61656 -14.20344,31.82 -31.82,31.82c-17.61656,0 -31.82,-14.20344 -31.82,-31.82c0,-17.61656 14.20344,-31.82 31.82,-31.82z"></path></g></g></svg>
+		  		</div> <span class="font-semibold text-sm">Ibu & Anak</span>
+		  		<div class="absolute inset-y-0 right-0 bg-white">
+				    <div class="flex justify-end w-10 bg-transparent py-1">
+				    	<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+						width="12" height="12"
+						viewBox="0 0 172 172"
+						style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#333333"><path d="M72.39453,11.00196l-7.72656,7.55859l60.84668,62.06445l-60.84668,62.10645l7.72656,7.4746l68.15332,-69.58105z"></path></g></g></svg>
+				    </div>
+				</div>
+		  	</div>
+		  </span>
+		  <span class="block text-gray-700 text-center bg-white px-4 py-2 border border-b-0 border-gray-400">
+		  	<div class="flex relative">
+		  		<div class="mr-2">
+		  			<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+					width="20" height="20"
+					viewBox="0 0 172 172"
+					style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#333333"><path d="M52.80265,17.2c-15.73367,0 -28.72937,12.26872 -28.72937,27.52v15.18437c-4.88084,2.09863 -8.6058,6.41318 -9.83625,11.68391c-1.98569,8.50958 2.69468,16.25668 9.83625,19.49109v25.88063c0,8.14582 4.09526,15.35799 10.32,19.71953v14.68047c0.00019,1.89978 1.54022,3.43981 3.44,3.44h13.76c1.89978,-0.00019 3.43981,-1.54022 3.44,-3.44v-10.32h61.92672v10.32c0.00019,1.89978 1.54022,3.43981 3.44,3.44h13.76c1.89978,-0.00019 3.43981,-1.54022 3.44,-3.44v-14.68047c6.22474,-4.36154 10.32,-11.57371 10.32,-19.71953v-25.82015c6.00325,-2.6801 10.32,-8.4806 10.32,-15.45985c0,-7.00688 -4.27538,-13.04789 -10.32,-15.72187v-15.23813c0,-15.25128 -12.98899,-27.52 -28.72265,-27.52zM52.80265,24.08h66.39469c12.19225,0 21.84265,9.2932 21.84265,20.64v13.76672c-0.55494,-0.00073 -1.11456,0.0199 -1.67969,0.07391c-9.02682,0.85928 -15.52031,8.8481 -15.52031,17.71062v16.60875h-75.68672v-17.2c0,-9.45144 -7.82556,-17.14234 -17.2,-17.18656v-13.77344c0,-11.3468 9.65712,-20.64 21.84937,-20.64zM31.02047,65.35328c5.79283,-0.01035 10.25281,4.60199 10.25281,10.32672v34.4c0,5.6587 4.6613,10.32 10.32,10.32h68.80672c5.6587,0 10.32,-4.6613 10.32,-10.32v-33.80875c0,-5.5098 4.00845,-10.36126 9.29203,-10.86422c6.25297,-0.59752 11.34797,4.19462 11.34797,10.27297c0,4.83123 -3.29431,8.78799 -7.74672,9.94375c-1.51671,0.395 -2.57474,1.7652 -2.57328,3.3325v28.00375c0,9.54141 -7.65859,17.2 -17.2,17.2h-75.68672c-9.54141,0 -17.2,-7.65859 -17.2,-17.2v-27.97015c-0.00239,-1.56674 -1.06304,-2.93398 -2.58,-3.32578c-5.1912,-1.33966 -8.8479,-6.47353 -7.43766,-12.51703c0.84352,-3.61329 3.91442,-6.66685 7.53172,-7.49813c0.87293,-0.2005 1.72558,-0.29414 2.55313,-0.29562zM48.15328,99.76h75.68672v10.32c0,1.9437 -1.4963,3.44 -3.44,3.44h-68.80672c-1.9437,0 -3.44,-1.4963 -3.44,-3.44zM41.27328,140.01875c2.18218,0.65391 4.49037,1.02125 6.88,1.02125v6.88h-6.88zM130.72,140.01875v7.90125h-6.88v-6.88c2.38963,0 4.69782,-0.36734 6.88,-1.02125z"></path></g></g></svg>
+		  		</div> <span class="font-semibold text-sm">Elektronik & Rumah</span>
+		  		<div class="absolute inset-y-0 right-0 bg-white">
+				    <div class="flex justify-end w-10 bg-transparent py-1">
+				    	<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+						width="12" height="12"
+						viewBox="0 0 172 172"
+						style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#333333"><path d="M72.39453,11.00196l-7.72656,7.55859l60.84668,62.06445l-60.84668,62.10645l7.72656,7.4746l68.15332,-69.58105z"></path></g></g></svg>
+				    </div>
+				</div>
+		  	</div>
+		  </span>
+		  <span class="block text-gray-700 text-center bg-white px-4 py-2 border border-b-0 border-gray-400">
+		  	<div class="flex relative">
+		  		<div class="mr-2">
+		  			<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+					width="20" height="20"
+					viewBox="0 0 172 172"
+					style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#333333"><path d="M86,21.5c-35.56738,0 -64.5,28.93262 -64.5,64.5c0,35.56739 28.93262,64.5 64.5,64.5c31.47315,0 57.69727,-22.71777 63.32422,-52.57422c0,-0.12597 0.06299,-0.27295 0,-0.67187c0.65088,-3.67432 1.17578,-7.39062 1.17578,-11.25391c0,-35.56738 -28.93261,-64.5 -64.5,-64.5zM86,32.25c4.89209,0 9.61621,0.62989 14.10938,1.84766c0.65088,4.70313 0.50391,10.54004 -0.16797,15.78906c-0.48291,3.82129 -1.23877,6.9917 -1.84766,9.40625c-0.46191,-0.04199 -0.88183,-0.16797 -1.34375,-0.16797c-1.42773,0 -2.70849,0.31494 -4.03125,0.67188c-3.27539,-6.00488 -8.33545,-12.03076 -13.77344,-17.46875c-2.87646,-2.87646 -5.9209,-5.50097 -8.73437,-7.72656c5.01807,-1.53271 10.26709,-2.35156 15.78906,-2.35156zM111.19531,38.63281c16.125,8.54541 27.27393,24.90137 28.38672,44.17578c-11.56885,-12.28271 -25.55224,-15.93604 -29.5625,-16.79687c-0.5669,-0.81885 -1.30176,-1.49072 -2.01562,-2.18359c0.02099,-0.04199 -0.02099,-0.12597 0,-0.16797c0.98682,-3.19141 1.86865,-7.34863 2.51953,-12.42969c0.50391,-3.98926 0.77685,-8.27246 0.67188,-12.59766zM58.78906,39.64063c1.02881,0.5249 2.30957,1.34375 3.86328,2.51953c2.62451,1.97364 5.58496,4.74512 8.56641,7.72656c5.27002,5.24903 10.09912,11.54785 12.42969,15.95703c-0.23096,0.33594 -0.46191,0.67188 -0.67187,1.00781c-20.30322,2.45654 -37.20508,11.79981 -50.39062,25.36328c-0.23096,-2.01562 -0.33594,-4.13623 -0.33594,-6.21484c0,-19.82031 10.62403,-37.03711 26.53906,-46.35937zM96.75,69.875c3.02344,0 5.375,2.35156 5.375,5.375c0,3.02344 -2.35156,5.375 -5.375,5.375c-3.02344,0 -5.375,-2.35156 -5.375,-5.375c0,-3.02344 2.35156,-5.375 5.375,-5.375zM112.53906,77.9375c7.28565,2.54053 19.16943,8.31445 25.69922,20.99609c-2.47754,10.07813 -7.87354,18.93848 -15.11719,25.86719c-1.11279,-5.22803 -2.60352,-11.08594 -4.53516,-16.96484c-2.66651,-8.10449 -5.9209,-15.91504 -9.91016,-21.83594c1.99463,-2.22558 3.33838,-5.01807 3.86328,-8.0625zM80.96094,78.10547c0.73486,3.94727 2.81348,7.5166 5.87891,9.91016c-1.63769,5.18604 -5.62695,13.79443 -10.58203,22.33984c-4.99707,8.6294 -10.70801,17.2168 -15.28516,23.17969c-11.63183,-6.10986 -20.72315,-16.27197 -25.36328,-28.72266c11.69482,-14.19336 26.53906,-23.6626 45.35156,-26.70703zM99.26953,91.03906c2.91846,4.13623 6.38281,11.96778 9.07031,20.15625c2.49854,7.55859 4.43018,15.34815 5.375,20.82813c-8.08349,4.8501 -17.57373,7.72656 -27.71484,7.72656c-5.14404,0 -10.07812,-0.67187 -14.78125,-2.01562c4.64014,-6.23584 9.84717,-14.04639 14.44531,-22.00391c5.10205,-8.81836 9.49023,-17.1748 11.58984,-24.35547c0.69287,-0.02099 1.34375,-0.23096 2.01563,-0.33594z"></path></g></g></svg>
+		  		</div> <span class="font-semibold text-sm">Olahraga & Hobi</span>
+		  		<div class="absolute inset-y-0 right-0 bg-white">
+				    <div class="flex justify-end w-10 bg-transparent py-1">
+				    	<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+						width="12" height="12"
+						viewBox="0 0 172 172"
+						style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#333333"><path d="M72.39453,11.00196l-7.72656,7.55859l60.84668,62.06445l-60.84668,62.10645l7.72656,7.4746l68.15332,-69.58105z"></path></g></g></svg>
+				    </div>
+				</div>
+		  	</div>
+		  </span>
+		  <span class="block text-gray-700 text-center bg-white px-4 py-2 border border-gray-400">
+		  	<div class="flex relative">
+		  		<div class="mr-2">
+		  			<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+					width="20" height="20"
+					viewBox="0 0 172 172"
+					style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#333333"><path d="M128.0325,16.28625c-0.80625,0.01344 -1.6125,0.08063 -2.41875,0.16125c-3.225,0.37625 -6.40969,1.37063 -9.33906,2.83531c-4.59562,2.29781 -8.62687,5.81844 -11.15312,10.23937c-2.67406,-1.27656 -5.65719,-2.00219 -8.80156,-2.00219c-11.35469,0 -20.64,9.28531 -20.64,20.64c0,1.37063 0.16125,2.70094 0.41656,3.99094c-1.22281,-0.34937 -2.49938,-0.55094 -3.85656,-0.55094c-8.2775,0 -15.23812,5.93938 -16.85062,13.76h-7.92813c-1.65281,-7.76687 -8.26406,-13.76 -16.50125,-13.76c-9.46,0 -17.2,7.74 -17.2,17.2c0,8.2775 5.93938,15.23813 13.76,16.85063v65.70937h123.84v-86h-14.10937c-1.6125,-7.82062 -8.57313,-13.76 -16.85063,-13.76c-1.35719,0 -2.63375,0.20156 -3.85656,0.55094c0.25531,-1.29 0.41656,-2.62031 0.41656,-3.99094c0,-5.73781 -2.365,-10.93812 -6.16781,-14.67375c1.73344,-3.27875 4.8375,-6.18125 8.57313,-8.04906c4.47469,-2.24406 9.63469,-2.88906 13.70625,-1.53187c1.80062,0.60469 3.74906,-0.37625 4.35375,-2.17688c0.60469,-1.80062 -0.37625,-3.74906 -2.17688,-4.35375c-2.33812,-0.77937 -4.78375,-1.11531 -7.21594,-1.08844zM30.96,58.48c5.73781,0 10.32,4.58219 10.32,10.32v3.44h103.2v6.88h-113.52c-5.73781,0 -10.32,-4.58219 -10.32,-10.32c0,-5.73781 4.58219,-10.32 10.32,-10.32zM72.24,58.48c3.92375,0 7.25625,2.19031 9.01656,5.42875l0.79281,1.45125h-18.71844c1.505,-3.82969 4.515,-6.88 8.90906,-6.88zM96.32,58.48c0.84656,0 1.65281,0.12094 2.43219,0.30906c0.05375,0.01344 0.1075,0.01344 0.16125,0.02687c0.73906,0.20156 1.43781,0.48375 2.09625,0.83313c0.08063,0.04031 0.17469,0.09406 0.25531,0.13437c0.65844,0.37625 1.29,0.81969 1.85438,1.33031c0.01344,0.01344 0.04031,0.04031 0.05375,0.05375c0.59125,0.55094 1.12875,1.15563 1.58562,1.8275l0.02688,0.04031c0.18812,0.28219 0.38969,0.56437 0.55094,0.87344l0.79281,1.45125h-19.61875l0.79281,-1.45125c0.17469,-0.3225 0.37625,-0.61812 0.57781,-0.91375c0.91375,-1.33031 2.10969,-2.43219 3.49375,-3.21156c0.08063,-0.04031 0.17469,-0.09406 0.25531,-0.13437c0.65844,-0.34938 1.35719,-0.63156 2.09625,-0.83313c0.05375,-0.01344 0.1075,-0.01344 0.16125,-0.02687c0.77937,-0.18813 1.58562,-0.30906 2.43219,-0.30906zM120.4,58.48c4.39406,0 7.40406,3.05031 8.90906,6.88h-18.71844l0.79281,-1.45125c1.76031,-3.23844 5.09281,-5.42875 9.01656,-5.42875zM34.4,110.08h110.08v10.32h-110.08z"></path></g></g></svg>
+		  		</div> <span class="font-semibold text-sm">Bahan Makanan & Layanan</span>
+		  		<div class="absolute inset-y-0 right-0 bg-white">
+				    <div class="flex justify-end w-10 bg-transparent py-1">
+				    	<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+						width="12" height="12"
+						viewBox="0 0 172 172"
+						style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#333333"><path d="M72.39453,11.00196l-7.72656,7.55859l60.84668,62.06445l-60.84668,62.10645l7.72656,7.4746l68.15332,-69.58105z"></path></g></g></svg>
+				    </div>
+				</div>
+		  	</div>
+		  </span>
+
+		  <div class="block py-1 m-4">
+		  	<div class="flex relative">
+		  		<img src="https://dxclnrbvyw82b.cloudfront.net/images/di/upload/20200813/ff4c6355-d82a-46e3-b66d-03632499681e/353/LEFT1.jpg" alt="placeholder+image">
+		  	</div>
+		  </div>
+
+		  <div class="block py-1 m-4">
+		  	<div class="flex relative">
+		  		<img src="https://dxclnrbvyw82b.cloudfront.net/images/di/upload/20200810/ff4c6355-d82a-46e3-b66d-03632499681e/110/Left%20Banner%20Launching.jpg" alt="placeholder+image">
+		  	</div>
+		  </div>
+		</div>
+	</div>
+	<div class="sm:w-full md:w-full lg:w-9/12 h-auto bg-white sm:block md:block lg:block xl:block">
+		<div class="py-6 relative">
+		  <div class="bg-white px-0 xl:px-4 mb-0 lg:mb-6 xl-mb-6">
+		  	<div class="bg-white w-full h-auto">
+		  		<img src="https://dxclnrbvyw82b.cloudfront.net/images/di/upload/20200811/ff4c6355-d82a-46e3-b66d-03632499681e/261/NCPALDOSTEPINTOLOVEECBillboardrsz.jpg" alt="placeholder+image">
+		  	</div>
+		  </div>
+
+	  		<div class="absolute inset-x-0 bottom-0 h-12 w-full bg-white mt-1 hidden md:hidden lg:block xl:block">
+			  <div class="sm:px-0 md:px-0 lg:px-4 xl:px-4 h-12 w-full">
+				  <div class="mb-0 border py-3 px-8" style="background-color: #363636;">
+				  	<ul class="flex justify-center">
+					  <li class="sm:mr-0 md:mr-4 lg:mr-8 xl:mr-8">
+					    <a class="text-white text-xs hover:text-gray-400" href="#">Exclusive Launch SEOUL MADE</a>
+					  </li>
+					  <li class="sm:mr-0 md:mr-4 lg:mr-8 xl:mr-8">
+					    <a class="text-gray-200 text-xs hover:text-gray-400" href="#">Top Beauty Brands Haul</a>
+					  </li>
+					  <li class="sm:mr-0 md:mr-4 lg:mr-8 xl:mr-8">
+					    <a class="text-gray-200 text-xs hover:text-gray-400" href="#">ALDO Step Into Love</a>
+					  </li>
+					  <li class="sm:mr-0 md:mr-4 lg:mr-8 xl:mr-8">
+					    <a class="text-gray-200 text-xs hover:text-gray-400" href="#">I'm Meme Officially Launch</a>
+					  </li>
+					  <li class="sm:mr-0 md:mr-4 lg:mr-8 xl:mr-8">
+					    <a class="text-gray-200 text-xs hover:text-gray-400" href="#">Missha Fabulous Saving</a>
+					  </li>
+					</ul>
+				  </div>
+			  </div>
+	  		</div>
+		</div>
+	</div>
+</div>
+
+<div class="flex flex-wrap hidden xl:block">
+	<div class="sm:w-full md:w-full lg:w-3/12 xl:w-3/12 h-10 bg-transparent">
+		<div class="ml-16 sm:mt-4 md:mt-4">
+			<div class="flex py-1">
+				<div class="mr-3">
+					<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+					width="32" height="32"
+					viewBox="0 0 172 172"
+					style=" fill:#000000;"><g transform="translate(10.492,10.492) scale(0.878,0.878)"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="none" stroke-linecap="butt" stroke-linejoin="none" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g stroke="#333333" stroke-width="24" stroke-linejoin="round"><path d="M86,164.9996c-0.7009,0 -1.3631,-0.2365 -1.9092,-0.6794l-14.6931,-12.0314l-18.6405,3.8141c-0.2193,0.0516 -0.4214,0.0731 -0.6235,0.0731c-1.1868,0 -2.2618,-0.7267 -2.7434,-1.849l-7.4304,-17.4838l-18.2578,-5.2675c-1.3588,-0.3956 -2.2661,-1.7157 -2.1543,-3.1347l1.548,-18.9415l-13.7213,-13.158c-1.0277,-0.9847 -1.2212,-2.5714 -0.4601,-3.7711l10.1824,-16.0519l-6.0458,-18.0256c-0.4472,-1.3416 0.1204,-2.838 1.3545,-3.5475l16.469,-9.4987l3.0272,-18.7566c0.2279,-1.4104 1.4233,-2.4725 2.8423,-2.5284l18.9931,-0.7525l11.3993,-15.2091c0.5633,-0.7482 1.4663,-1.1997 2.408,-1.1997c0.4472,0 0.8772,0.0989 1.2814,0.2924l17.1699,8.1657l17.1656,-8.1657c0.4085,-0.1935 0.8385,-0.2924 1.2857,-0.2924c0.9417,0 1.8447,0.4472 2.4123,1.204l11.395,15.2048l18.9931,0.7525c1.419,0.0559 2.6187,1.118 2.8552,2.5284l3.0229,18.748l16.4733,9.4987c1.2298,0.7052 1.7974,2.2059 1.3502,3.5561l-6.0372,18.017l10.1738,16.0519c0.7611,1.204 0.5676,2.7907 -0.4644,3.7754l-13.717,13.158l1.548,18.9458c0.1118,1.4147 -0.7955,2.7348 -2.1629,3.1304l-18.2578,5.2675l-7.4261,17.4924c-0.4687,1.1008 -1.5738,1.8404 -2.7477,1.8404c-0.2021,0 -0.4042,-0.0258 -0.6063,-0.0688l-18.6491,-3.8184l-14.706,12.0357c-0.5375,0.4429 -1.1954,0.6794 -1.8963,0.6794z" fill="#e67e22"></path><path d="M104.4427,9.1504c-0.1161,0 -0.2322,0.0258 -0.3397,0.0731l-16.2583,7.7357l-1.849,0.8772l-1.849,-0.8772l-16.2411,-7.7271c-0.1204,-0.0559 -0.2365,-0.0817 -0.3612,-0.0817c-0.2752,0 -0.5332,0.129 -0.7009,0.3483l-10.7758,14.3792l-1.2255,1.6383l-2.0425,0.0817l-17.9697,0.7095c-0.4085,0.0172 -0.7396,0.3096 -0.8041,0.7224l-2.8681,17.7504l-0.3268,2.0167l-1.7716,1.0191l-15.5832,8.987c-0.3526,0.2021 -0.516,0.6278 -0.387,1.0105l5.719,17.0495l0.6493,1.9393l-1.0965,1.7286l-9.632,15.1919c-0.215,0.3397 -0.1591,0.7869 0.129,1.0621l12.986,12.4528l1.4878,1.4104l-0.1677,2.0382l-1.462,17.9267c-0.0344,0.4042 0.2279,0.7783 0.6192,0.8944l17.2645,4.9794l1.9651,0.5676l0.7998,1.8834l7.0262,16.5507c0.1333,0.3096 0.4429,0.5289 0.7611,0.5289l17.8278,-3.6378l2.0038,-0.4085l1.5824,1.2943l13.9105,11.3864c0.1548,0.129 0.3397,0.1935 0.5418,0.1935c0.2021,0 0.3827,-0.0645 0.5418,-0.1935l13.9105,-11.3864l1.5824,-1.2943l2.0038,0.4085l17.63,3.612c0.0301,0.0043 0.0602,0.0043 0.086,0.0043c0.4171,0 0.7267,-0.1677 0.8729,-0.5117l7.0219,-16.5464l0.7998,-1.8834l1.9651,-0.5676l17.2774,-4.9794c0.3913,-0.1161 0.645,-0.4816 0.6106,-0.8901l-1.462,-17.9267l-0.1677,-2.0382l1.4749,-1.4147l12.9817,-12.4442c0.2967,-0.2838 0.3483,-0.7353 0.1333,-1.0793l-9.6234,-15.1833l-1.0965,-1.7286l0.6493,-1.9393l5.7147,-17.0538c0.1247,-0.3741 -0.0344,-0.8041 -0.387,-1.0062l-15.5875,-8.987l-1.7716,-1.0234l-0.3268,-2.0167l-2.8681,-17.7504c-0.0645,-0.387 -0.4085,-0.6966 -0.817,-0.7138l-17.9654,-0.7095l-2.0425,-0.0817l-1.2255,-1.6383l-10.7887,-14.3921c-0.1591,-0.2107 -0.4171,-0.3397 -0.688,-0.3397M104.4427,4.8504c1.5824,0 3.1304,0.731 4.1323,2.0597l10.7887,14.3964l17.9697,0.7095c2.4467,0.0989 4.4892,1.9049 4.8891,4.3258l2.8681,17.7504l15.5832,8.987c2.1199,1.2212 3.0874,3.7711 2.3177,6.0974l-5.7147,17.0538l9.6277,15.1919c1.3072,2.0726 0.9804,4.7859 -0.7912,6.4801l-12.9817,12.4442l1.462,17.9267c0.2021,2.4467 -1.3459,4.687 -3.7023,5.3707l-17.2774,4.9794l-7.0262,16.5507c-0.8213,1.9264 -2.7047,3.1476 -4.7257,3.1476c-0.344,0 -0.6966,-0.0387 -1.0492,-0.1118l-17.63,-3.612l-13.9148,11.3864c-0.9503,0.7783 -2.1027,1.1653 -3.2637,1.1653c-1.161,0 -2.3134,-0.387 -3.2637,-1.1653l-13.9105,-11.3864l-17.6343,3.612c-0.3526,0.0731 -0.7095,0.1118 -1.0578,0.1118c-2.021,0 -3.8958,-1.2298 -4.7214,-3.1519l-7.0262,-16.5507l-17.2774,-4.9794c-2.3478,-0.6837 -3.9001,-2.924 -3.7023,-5.3707l1.462,-17.9267l-12.9817,-12.4442c-1.7759,-1.6942 -2.1027,-4.4075 -0.7912,-6.4758l9.632,-15.1919l-5.719,-17.0538c-0.7783,-2.3263 0.1978,-4.8762 2.3177,-6.0974l15.5832,-8.987l2.8681,-17.7504c0.3913,-2.4252 2.4295,-4.2312 4.8762,-4.3301l17.974,-0.7095l10.7844,-14.3878c1.0062,-1.3287 2.5499,-2.0597 4.1323,-2.0597c0.7439,0 1.4964,0.1591 2.2059,0.4988l16.2411,7.7271l16.2411,-7.7271c0.7052,-0.3397 1.4577,-0.5031 2.2059,-0.5031z" fill="#f1c40f"></path><path d="M60.9568,102.2024h-5.8738l-15.48,-23.8177c-0.3913,-0.602 -0.7138,-1.2298 -0.9718,-1.8748h-0.1376c0.1204,0.6923 0.1806,2.1758 0.1806,4.4505v21.2377h-5.1944v-32.4005h6.2608l14.9597,23.2501c0.6321,0.9632 1.0406,1.6254 1.2212,1.9866h0.0903c-0.1505,-0.86 -0.2279,-2.3134 -0.2279,-4.3602v-20.8765h5.1729zM89.4787,102.2024h-18.189v-32.4005h17.4666v4.5623h-12.0873v9.1719h11.1413v4.5408h-11.1413v9.5804h12.8097zM138.5202,69.7976l-8.8795,32.4005h-6.0802l-6.1705,-22.6653c-0.258,-0.9632 -0.4128,-2.0167 -0.473,-3.1648h-0.086c-0.0774,1.0707 -0.258,2.107 -0.5418,3.1175l-6.192,22.7083h-6.2135l-9.0601,-32.4005h5.8953l5.8738,23.7274c0.2408,0.9933 0.3913,2.0339 0.4515,3.1175h0.1118c0.0602,-0.7697 0.2709,-1.806 0.6321,-3.1175l6.6435,-23.7274h5.5384l6.1447,23.908c0.2107,0.8127 0.3698,1.7759 0.473,2.8939h0.0903c0.0473,-0.7525 0.2193,-1.7458 0.5203,-2.9842l5.762,-23.8177h5.5599z" fill="#ffffff"></path></g><path d="M0,172v-172h172v172z" fill="none" stroke="none" stroke-width="1" stroke-linejoin="miter"></path><g stroke="none" stroke-width="1" stroke-linejoin="miter"><path d="M86,164.9996c-0.7009,0 -1.3631,-0.2365 -1.9092,-0.6794l-14.6931,-12.0314l-18.6405,3.8141c-0.2193,0.0516 -0.4214,0.0731 -0.6235,0.0731c-1.1868,0 -2.2618,-0.7267 -2.7434,-1.849l-7.4304,-17.4838l-18.2578,-5.2675c-1.3588,-0.3956 -2.2661,-1.7157 -2.1543,-3.1347l1.548,-18.9415l-13.7213,-13.158c-1.0277,-0.9847 -1.2212,-2.5714 -0.4601,-3.7711l10.1824,-16.0519l-6.0458,-18.0256c-0.4472,-1.3416 0.1204,-2.838 1.3545,-3.5475l16.469,-9.4987l3.0272,-18.7566c0.2279,-1.4104 1.4233,-2.4725 2.8423,-2.5284l18.9931,-0.7525l11.3993,-15.2091c0.5633,-0.7482 1.4663,-1.1997 2.408,-1.1997c0.4472,0 0.8772,0.0989 1.2814,0.2924l17.1699,8.1657l17.1656,-8.1657c0.4085,-0.1935 0.8385,-0.2924 1.2857,-0.2924c0.9417,0 1.8447,0.4472 2.4123,1.204l11.395,15.2048l18.9931,0.7525c1.419,0.0559 2.6187,1.118 2.8552,2.5284l3.0229,18.748l16.4733,9.4987c1.2298,0.7052 1.7974,2.2059 1.3502,3.5561l-6.0372,18.017l10.1738,16.0519c0.7611,1.204 0.5676,2.7907 -0.4644,3.7754l-13.717,13.158l1.548,18.9458c0.1118,1.4147 -0.7955,2.7348 -2.1629,3.1304l-18.2578,5.2675l-7.4261,17.4924c-0.4687,1.1008 -1.5738,1.8404 -2.7477,1.8404c-0.2021,0 -0.4042,-0.0258 -0.6063,-0.0688l-18.6491,-3.8184l-14.706,12.0357c-0.5375,0.4429 -1.1954,0.6794 -1.8963,0.6794z" fill="#e67e22"></path><path d="M104.4427,9.1504c0.2709,0 0.5289,0.129 0.688,0.3397l10.7887,14.3921l1.2255,1.6383l2.0425,0.0817l17.9654,0.7095c0.4085,0.0172 0.7525,0.3268 0.817,0.7138l2.8681,17.7504l0.3268,2.0167l1.7716,1.0234l15.5875,8.987c0.3526,0.2021 0.5117,0.6321 0.387,1.0062l-5.7147,17.0538l-0.6493,1.9393l1.0965,1.7286l9.6234,15.1833c0.215,0.344 0.1634,0.7955 -0.1333,1.0793l-12.9817,12.4442l-1.4749,1.4147l0.1677,2.0382l1.462,17.9267c0.0344,0.4085 -0.2193,0.774 -0.6106,0.8901l-17.2774,4.9794l-1.9651,0.5676l-0.7998,1.8834l-7.0219,16.5464c-0.1462,0.344 -0.4558,0.5117 -0.8729,0.5117c-0.0258,0 -0.0559,0 -0.086,-0.0043l-17.63,-3.612l-2.0038,-0.4085l-1.5824,1.2943l-13.9105,11.3864c-0.1591,0.129 -0.3397,0.1935 -0.5418,0.1935c-0.2021,0 -0.387,-0.0645 -0.5418,-0.1935l-13.9105,-11.3864l-1.5824,-1.2943l-2.0038,0.4085l-17.8278,3.6378c-0.3182,0 -0.6278,-0.2193 -0.7611,-0.5289l-7.0262,-16.5507l-0.7998,-1.8834l-1.9651,-0.5676l-17.2645,-4.9794c-0.3913,-0.1161 -0.6536,-0.4902 -0.6192,-0.8944l1.462,-17.9267l0.1677,-2.0382l-1.4878,-1.4104l-12.986,-12.4528c-0.2881,-0.2752 -0.344,-0.7224 -0.129,-1.0621l9.632,-15.1919l1.0965,-1.7286l-0.6493,-1.9393l-5.719,-17.0495c-0.129,-0.3827 0.0344,-0.8084 0.387,-1.0105l15.5832,-8.987l1.7716,-1.0191l0.3268,-2.0167l2.8681,-17.7504c0.0645,-0.4128 0.3956,-0.7052 0.8041,-0.7224l17.9697,-0.7095l2.0425,-0.0817l1.2255,-1.6383l10.7758,-14.3792c0.1677,-0.2193 0.4257,-0.3483 0.7009,-0.3483c0.1247,0 0.2408,0.0258 0.3612,0.0817l16.2411,7.7271l1.849,0.8772l1.849,-0.8772l16.2583,-7.7357c0.1075,-0.0473 0.2236,-0.0731 0.3397,-0.0731M104.4427,4.8504c-0.7482,0 -1.5007,0.1634 -2.2059,0.5031l-16.2411,7.7271l-16.2411,-7.7271c-0.7095,-0.3397 -1.462,-0.4988 -2.2059,-0.4988c-1.5824,0 -3.1261,0.731 -4.1323,2.0597l-10.7844,14.3878l-17.974,0.7095c-2.4467,0.0989 -4.4849,1.9049 -4.8762,4.3301l-2.8681,17.7504l-15.5832,8.987c-2.1199,1.2212 -3.096,3.7711 -2.3177,6.0974l5.719,17.0538l-9.632,15.1919c-1.3115,2.0683 -0.9847,4.7816 0.7912,6.4758l12.9817,12.4442l-1.462,17.9267c-0.1978,2.4467 1.3545,4.687 3.7023,5.3707l17.2774,4.9794l7.0262,16.5507c0.8256,1.9221 2.7004,3.1519 4.7214,3.1519c0.3483,0 0.7052,-0.0387 1.0578,-0.1118l17.6343,-3.612l13.9105,11.3864c0.9503,0.7783 2.1027,1.1653 3.2637,1.1653c1.161,0 2.3134,-0.387 3.2637,-1.1653l13.9148,-11.3864l17.63,3.612c0.3526,0.0731 0.7052,0.1118 1.0492,0.1118c2.021,0 3.9044,-1.2212 4.7257,-3.1476l7.0262,-16.5507l17.2774,-4.9794c2.3564,-0.6837 3.9044,-2.924 3.7023,-5.3707l-1.462,-17.9267l12.9817,-12.4442c1.7716,-1.6942 2.0984,-4.4075 0.7912,-6.4801l-9.6277,-15.1919l5.7147,-17.0538c0.7697,-2.3263 -0.1978,-4.8762 -2.3177,-6.0974l-15.5832,-8.987l-2.8681,-17.7504c-0.3999,-2.4209 -2.4424,-4.2269 -4.8891,-4.3258l-17.9697,-0.7095l-10.7887,-14.3964c-1.0019,-1.3287 -2.5499,-2.0597 -4.1323,-2.0597z" fill="#f1c40f"></path><path d="M60.9568,102.2024h-5.8738l-15.48,-23.8177c-0.3913,-0.602 -0.7138,-1.2298 -0.9718,-1.8748h-0.1376c0.1204,0.6923 0.1806,2.1758 0.1806,4.4505v21.2377h-5.1944v-32.4005h6.2608l14.9597,23.2501c0.6321,0.9632 1.0406,1.6254 1.2212,1.9866h0.0903c-0.1505,-0.86 -0.2279,-2.3134 -0.2279,-4.3602v-20.8765h5.1729zM89.4787,102.2024h-18.189v-32.4005h17.4666v4.5623h-12.0873v9.1719h11.1413v4.5408h-11.1413v9.5804h12.8097zM138.5202,69.7976l-8.8795,32.4005h-6.0802l-6.1705,-22.6653c-0.258,-0.9632 -0.4128,-2.0167 -0.473,-3.1648h-0.086c-0.0774,1.0707 -0.258,2.107 -0.5418,3.1175l-6.192,22.7083h-6.2135l-9.0601,-32.4005h5.8953l5.8738,23.7274c0.2408,0.9933 0.3913,2.0339 0.4515,3.1175h0.1118c0.0602,-0.7697 0.2709,-1.806 0.6321,-3.1175l6.6435,-23.7274h5.5384l6.1447,23.908c0.2107,0.8127 0.3698,1.7759 0.473,2.8939h0.0903c0.0473,-0.7525 0.2193,-1.7458 0.5203,-2.9842l5.762,-23.8177h5.5599z" fill="#ffffff"></path></g><path d="" fill="none" stroke="none" stroke-width="1" stroke-linejoin="miter"></path><path d="" fill="none" stroke="none" stroke-width="1" stroke-linejoin="miter"></path></g></g></svg>
+				</div>
+				<span class="font-black text-gray-700 text-xl italic">New </span>&nbsp;<span class="font-black text-yellow-400 text-xl italic">Arrival</span>
+			</div>
+		</div>
+	</div>
+	<div class="sm:w-full md:w-full lg:w-9/12 xl:w-9/12 h-10 bg-transparent">
+		<div class="w-full h-1 bg-gray-300 mt-10">
+		</div>
+	</div>
+</div>
+
+
+<div class="flex flex-wrap bg-transparent hidden xl:block">
+	<div class="w-full h-auto px-6 py-2">
+		<div class="flex justify-center bg-transparent px-8">
+		<div class="grid grid-cols-5 gap-5 mt-4">
+		  <div>
+			  <div class="bg-white border h-auto w-56 py-2 shadow hover:shadow-lg">
+			  	<div class="flex justify-center">
+			  		<img class="h-48" src="https://dxclnrbvyw82b.cloudfront.net/images/product/web/22/11/80/00/0/000000801122_06_285.png" alt="placeholder+image">
+			  	</div>
+		  		<div class="w-full py-2 h-8">
+		  			<span class="text-sm ml-6 text-left font-semibold">Elephant Mask</span>
+		  		</div>
+		  		<div class="w-full mt-2 h-10 px-6">
+		  			<p class="text-xs leading-none text-left">
+		  				Elephant Mask - 3D Functional Mask (1 pcs) + Replacemnent Filter (30 pcs)
+		  			</p>
+		  		</div>
+		  		<div class="w-full py-2 h-auto px-6 mt-2 sm:hidden md:hidden lg:block xl:block">
+		  			<div class="flex flex-wrap">
+		  				<div class="w-1/2">
+		  					<span class="inline-block bg-red-600 rounded-full px-3 py-1 text-xs font-semibold text-white mr-2">43%</span>
+		  				</div>
+		  				<div class="w-1/2">
+		  					<div class="flex justify-end">
+		  						<div class="w-full text-right">
+				  					<div class="block">
+				  						<p class="leading-none">
+				  						<span class="text-xs font-semibold line-through">Rp 299.000</span><br>
+				  						<span class="text-xs text-red-600 font-bold">Rp 169.000</span>
+				  						</p>
+				  					</div>
+		  						</div>
+		  					</div>
+		  				</div>
+		  			</div>
+		  		</div>
+			  </div>
+		  </div>
+		  <div>
+			  <div class="bg-white border h-auto w-56 py-2 shadow hover:shadow-lg">
+			  	<div class="flex justify-center">
+			  		<img class="h-48" src="https://dxclnrbvyw82b.cloudfront.net/images/product/web/11/27/86/00/0/000000862711_02_285.png" alt="placeholder+image">
+			  	</div>
+		  		<div class="w-full py-2 h-8">
+		  			<span class="text-sm ml-6 text-left font-semibold">Stojo</span>
+		  		</div>
+		  		<div class="w-full mt-2 h-10 px-6">
+		  			<p class="text-xs leading-none text-left">
+			  				Stojo Independence Day "Rakyat" Edition - 16oz Dove
+		  			</p>
+		  		</div>
+		  		<div class="w-full py-2 h-auto px-6 mt-2 sm:hidden md:hidden lg:block xl:block">
+		  			<div class="flex flex-wrap">
+		  				<div class="w-1/2">
+		  					<span class="inline-block bg-red-600 rounded-full px-3 py-1 text-xs font-semibold text-white mr-2">17%</span>
+		  				</div>
+		  				<div class="w-1/2">
+		  					<div class="flex justify-end">
+		  						<div class="w-full text-right">
+				  					<div class="block">
+				  						<p class="leading-none">
+				  						<span class="text-xs font-semibold line-through">Rp 410.000</span><br>
+				  						<span class="text-xs text-red-600 font-bold">Rp 340.300</span>
+				  						</p>
+				  					</div>
+		  						</div>
+		  					</div>
+		  				</div>
+		  			</div>
+		  		</div>
+			  </div>
+		  </div>
+		  <div>
+			  <div class="bg-white border h-auto w-56 py-2 shadow hover:shadow-lg">
+			  	<div class="flex justify-center">
+			  		<img class="h-48" src="https://dxclnrbvyw82b.cloudfront.net/images/product/web/96/54/83/00/0/000000835496_12_285.jpg" alt="placeholder+image">
+			  	</div>
+		  		<div class="w-full py-2 h-8">
+		  			<span class="text-sm ml-6 text-left font-semibold">One-days you</span>
+		  		</div>
+		  		<div class="w-full mt-2 h-10 px-6">
+		  			<p class="text-xs leading-none text-left">
+			  				One-days you Help Me Dacto Pad 125ml (60pads)
+		  			</p>
+		  		</div>
+		  		<div class="w-full py-2 h-auto px-6 mt-2 sm:hidden md:hidden lg:block xl:block">
+		  			<div class="flex flex-wrap">
+		  				<div class="w-1/2">
+		  					<span class="inline-block bg-red-600 rounded-full px-3 py-1 text-xs font-semibold text-white mr-2">43%</span>
+		  				</div>
+		  				<div class="w-1/2">
+		  					<div class="flex justify-end">
+		  						<div class="w-full text-right">
+				  					<div class="block">
+				  						<p class="leading-none">
+				  						<span class="text-xs font-semibold line-through">Rp 299.000</span><br>
+				  						<span class="text-xs text-red-600 font-bold">Rp 169.000</span>
+				  						</p>
+				  					</div>
+		  						</div>
+		  					</div>
+		  				</div>
+		  			</div>
+		  		</div>
+			  </div>
+		  </div>
+		  <div>
+			  <div class="bg-white border h-auto w-56 py-2 shadow hover:shadow-lg">
+			  	<div class="flex justify-center">
+			  		<img class="h-48" src="https://dxclnrbvyw82b.cloudfront.net/images/product/web/65/01/13/00/0/000000130165_05_285.png" alt="placeholder+image">
+			  	</div>
+		  		<div class="w-full py-2 h-8">
+		  			<span class="text-sm ml-6 text-left font-semibold">SK-II Facial</span>
+		  		</div>
+		  		<div class="w-full mt-2 h-10 px-6">
+		  			<p class="text-xs leading-none text-left">
+			  				SK-II Facial Treatment Clear Lotion 230ml
+		  			</p>
+		  		</div>
+		  		<div class="w-full py-2 h-auto px-6 mt-2 sm:hidden md:hidden lg:block xl:block">
+		  			<div class="flex flex-wrap">
+		  				<div class="w-1/2">
+		  					<span class="inline-block bg-red-600 rounded-full px-3 py-1 text-xs font-semibold text-white mr-2">43%</span>
+		  				</div>
+		  				<div class="w-1/2">
+		  					<div class="flex justify-end">
+		  						<div class="w-full text-right">
+				  					<div class="block">
+				  						<p class="leading-none">
+				  						<span class="text-xs font-semibold line-through">Rp 299.000</span><br>
+				  						<span class="text-xs text-red-600 font-bold">Rp 169.000</span>
+				  						</p>
+				  					</div>
+		  						</div>
+		  					</div>
+		  				</div>
+		  			</div>
+		  		</div>
+			  </div>
+		  </div>
+		  <div>
+			  <div class="bg-white border h-auto w-56 py-2 shadow hover:shadow-lg">
+			  	<div class="flex justify-center">
+			  		<img class="h-48" src="https://dxclnrbvyw82b.cloudfront.net/images/product/web/32/75/85/00/0/000000857532_01_285.JPG" alt="placeholder+image">
+			  	</div>
+		  		<div class="w-full py-2 h-8">
+		  			<span class="text-sm ml-6 text-left font-semibold">Swisse</span>
+		  		</div>
+		  		<div class="w-full mt-2 h-10 px-6">
+		  			<p class="text-xs leading-none text-left">
+			  				(Buy 1 Get 1) Swisse Ultiboost Vitamin C + Manuka Honey 120 Tablet
+		  			</p>
+		  		</div>
+		  		<div class="w-full py-2 h-auto px-6 mt-2 sm:hidden md:hidden lg:block xl:block">
+		  			<div class="flex flex-wrap">
+		  				<div class="w-1/2">
+		  					<span class="inline-block bg-red-600 rounded-full px-3 py-1 text-xs font-semibold text-white mr-2">43%</span>
+		  				</div>
+		  				<div class="w-1/2">
+		  					<div class="flex justify-end">
+		  						<div class="w-full text-right">
+				  					<div class="block">
+				  						<p class="leading-none">
+				  						<span class="text-xs font-semibold line-through">Rp 299.000</span><br>
+				  						<span class="text-xs text-red-600 font-bold">Rp 169.000</span>
+				  						</p>
+				  					</div>
+		  						</div>
+		  					</div>
+		  				</div>
+		  			</div>
+		  		</div>
+			  </div>
+		  </div>
+		  </div>
+		</div>
+
+	</div>
+</div>
+
+<div class="flex flex-wrap">
+	<div class="sm:w-full md:w-full lg:w-3/12 xl:w-3/12 h-10 px-0 xl:px-6 bg-transparent">
+		<div class="px-2 xl:px-10">
+			<div class="flex py-1">
+				<div class="mr-3">
+					<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+					width="24" height="24"
+					viewBox="0 0 172 172"
+					style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#e74c3c"><path d="M74.53333,11.46667c-3.16643,0 -5.73333,2.5669 -5.73333,5.73333c0,28.99347 -40.13333,51.6 -40.13333,91.73333c0,30.48893 33.04404,50.20072 44.67969,51.47683c0.3903,0.08224 0.78811,0.12352 1.18698,0.12317c3.16643,0 5.73333,-2.5669 5.73333,-5.73333c-0.00087,-1.72476 -0.77817,-3.35749 -2.11641,-4.44558c0,-0.00373 0,-0.00746 0,-0.0112c-5.21733,-4.2312 -15.08359,-16.50617 -15.08359,-27.71484c0,-18.39827 17.2,-25.16172 17.2,-25.16172c-9.80973,27.74933 22.33384,31.10217 28.80104,58.5763h0.0112c0.58189,2.62021 2.90371,4.48605 5.58776,4.49036c1.20741,-0.00294 2.38307,-0.38699 3.35938,-1.09739c0.10337,-0.075 0.20421,-0.15343 0.30234,-0.23516c0.93308,-0.60597 25.00495,-16.52664 25.00495,-50.26745c0,-13.775 -6.88956,-37.43579 -11.84739,-47.91589c-0.00409,-0.00866 -0.00711,-0.02496 -0.0112,-0.03359c-0.00372,-0.00747 -0.00745,-0.01494 -0.0112,-0.0224c-0.86395,-2.18853 -2.97733,-3.62704 -5.33021,-3.62812c-2.76275,0.00261 -5.13073,1.97514 -5.63255,4.69192c-0.00001,0.00747 -0.00001,0.01493 0,0.0224c-0.01401,0.06266 -2.64738,11.75767 -11.56745,18.21901c0,-27.01337 -19.50272,-54.91608 -29.78646,-66.45964c-0.15433,-0.20902 -0.32269,-0.40731 -0.50391,-0.59349c-1.0775,-1.11376 -2.55997,-1.74391 -4.10964,-1.74687z"></path></g></g></svg>
+				</div>
+				<span class="font-black text-black text-xl italic">Brand Suprise</span>
+			</div>
+		</div>
+	</div>
+	<div class="sm:w-full md:w-full lg:w-9/12 xl:w-9/12 h-10 bg-transparent">
+		<div class="w-full h-1 bg-gray-300 mt-6">
+		</div>
+	</div>
+</div>
+
+<div class="flex flex-wrap bg-transparent">
+	<div class="w-full h-auto px-0 xl:px-4 py-2">
+		<div class="px-2 xl:px-8">
+			<div class="flex justify-center bg-transparent px-2">
+			  <div class="py-2">
+				  <div class="bg-white border h-auto w-full shadow hover:shadow-lg">
+				  	<div class="flex justify-center">
+				  		<img class="h-auto" src="https://dxclnrbvyw82b.cloudfront.net/images/di/upload/20200814/ff4c6355-d82a-46e3-b66d-03632499681e/448/BrandSurprise_EC_Additional.jpg" alt="placeholder+image">
+				  	</div>
+				  </div>
+			  </div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="flex flex-wrap">
+	<div class="sm:w-full md:w-full lg:w-3/12 xl:w-3/12 h-10 px-0 xl:px-6 bg-transparent">
+		<div class="px-2 xl:px-10">
+			<div class="flex py-1">
+				<div class="mr-3">
+					<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+					width="24" height="24"
+					viewBox="0 0 172 172"
+					style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#e74c3c"><path d="M165.10656,70.10344l0.01344,-51.18344c0,-6.63812 -5.40187,-12.04 -12.04,-12.04l-51.17,0.01344l-2.16344,-0.01344c-4.46125,0 -8.7075,0.25531 -11.77125,3.31906l-78.17938,78.17937c-1.88125,1.86781 -2.91594,4.36719 -2.91594,7.02781c0,2.66063 1.03469,5.16 2.91594,7.02781l59.77,59.77c1.86781,1.88125 4.36719,2.91594 7.02781,2.91594c2.64719,0 5.16,-1.03469 7.02781,-2.91594l78.17937,-78.17938c3.35938,-3.34594 3.3325,-8.17 3.31906,-12.81937zM134.16,48.16c-5.6975,0 -10.32,-4.6225 -10.32,-10.32c0,-5.6975 4.6225,-10.32 10.32,-10.32c5.6975,0 10.32,4.6225 10.32,10.32c0,5.6975 -4.6225,10.32 -10.32,10.32z"></path></g></g></svg>
+				</div>
+				<span class="font-black text-black text-xl italic">Special</span>&nbsp;<span class="font-black text-red-600 text-xl italic">Deals</span>
+			</div>
+		</div>
+	</div>
+	<div class="sm:w-full md:w-full lg:w-9/12 xl:w-9/12 h-10 bg-transparent">
+		<div class="w-full h-1 bg-gray-300 mt-6">
+		</div>
+	</div>
+</div>
+
+<div class="flex flex-wrap bg-transparent">
+	<div class="w-full h-auto px-0 xl:px-4 py-2">
+		<div class="px-2 xl:px-10">
+			<div class="flex justify-center bg-transparent px-2">
+			  <div class="py-2 px-3">
+				  <div class="bg-white border h-auto w-auto shadow hover:shadow-lg">
+				  	<div class="flex justify-center">
+				  		<img class="h-auto" src="https://dxclnrbvyw82b.cloudfront.net/images/di/upload/20200813/ff4c6355-d82a-46e3-b66d-03632499681e/400/EC_Special_Deals1%20copy.png" alt="placeholder+image">
+				  	</div>
+				  </div>
+			  </div>
+			  <div class="py-2 px-3">
+				  <div class="bg-white border h-auto w-auto shadow hover:shadow-lg">
+				  	<div class="flex justify-center">
+				  		<img class="h-auto" src="https://dxclnrbvyw82b.cloudfront.net/images/di/upload/20200813/ff4c6355-d82a-46e3-b66d-03632499681e/402/EC_Special_Deals1%20copy%203.png" alt="placeholder+image">
+				  	</div>
+				  </div>
+			  </div>
+			  <div class="py-2 px-3">
+				  <div class="bg-white border h-auto w-auto shadow hover:shadow-lg">
+				  	<div class="flex justify-center">
+				  		<img class="h-auto" src="https://dxclnrbvyw82b.cloudfront.net/images/di/upload/20200813/ff4c6355-d82a-46e3-b66d-03632499681e/404/EC_Special_Deals1%20copy%204.png" alt="placeholder+image">
+				  	</div>
+				  </div>
+			  </div>
+			  <div class="py-2 px-3">
+				  <div class="bg-white border h-auto w-auto shadow hover:shadow-lg">
+				  	<div class="flex justify-center">
+				  		<img class="h-auto" src="https://dxclnrbvyw82b.cloudfront.net/images/di/upload/20200813/ff4c6355-d82a-46e3-b66d-03632499681e/406/EC_Special_Deals1.png" alt="placeholder+image">
+				  	</div>
+				  </div>
+			  </div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="flex flex-wrap">
+	<div class="sm:w-full md:w-full lg:w-3/12 xl:w-3/12 h-10 px-0 xl:px-6 bg-transparent">
+		<div class="px-2 xl:px-10">
+			<div class="flex py-1">
+				<div class="mr-3">
+					<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+					width="24" height="24"
+					viewBox="0 0 172 172"
+					style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g id="Layer_1"><path d="M92.9875,20.9625l6.31563,-5.375c6.04688,-5.24063 15.5875,-2.15 17.46875,5.64375l1.88125,8.0625c1.20938,5.10625 6.04688,8.6 11.2875,8.19688l8.19688,-0.67187c8.0625,-0.67187 13.84062,7.39063 10.75,14.78125l-3.09062,7.65937c-2.01562,4.8375 -0.13438,10.48125 4.3,13.30313l6.9875,4.3c6.85313,4.16563 6.85313,14.10938 0,18.275l-6.9875,4.3c-4.56875,2.82187 -6.31562,8.33125 -4.3,13.30313l3.09062,7.65937c3.09062,7.39063 -2.82188,15.45313 -10.75,14.78125l-8.19688,-0.67187c-5.24062,-0.40312 -10.07812,3.09062 -11.2875,8.19688l-1.88125,8.0625c-1.88125,7.79375 -11.2875,10.88437 -17.46875,5.64375l-6.31563,-5.375c-4.03125,-3.49375 -9.94375,-3.49375 -13.975,0l-6.31562,5.375c-6.04687,5.24063 -15.5875,2.15 -17.46875,-5.64375l-1.88125,-8.0625c-1.20938,-5.10625 -6.04687,-8.6 -11.2875,-8.19688l-8.19687,0.67188c-8.0625,0.67188 -13.84063,-7.39062 -10.75,-14.78125l3.09062,-7.65937c2.01563,-4.8375 0.13438,-10.48125 -4.3,-13.30313l-6.9875,-4.3c-6.85313,-4.16563 -6.85313,-14.10937 0,-18.275l6.9875,-4.3c4.56875,-2.82188 6.31563,-8.33125 4.3,-13.30313l-3.09062,-7.65937c-3.09063,-7.39062 2.82187,-15.45312 10.75,-14.78125l8.19687,0.67188c5.24063,0.40312 10.07813,-3.09063 11.2875,-8.19688l1.88125,-8.0625c1.88125,-7.79375 11.2875,-10.88437 17.46875,-5.64375l6.31563,5.375c4.03125,3.35938 9.94375,3.35938 13.975,0z" fill="#e74c3c"></path><path d="M68.53125,60.46875c-4.4528,0 -8.0625,3.6097 -8.0625,8.0625c0,4.4528 3.6097,8.0625 8.0625,8.0625c4.4528,0 8.0625,-3.6097 8.0625,-8.0625c0,-4.4528 -3.6097,-8.0625 -8.0625,-8.0625z" fill="#e74c3c"></path><path d="M68.53125,80.625c-6.71875,0 -12.09375,-5.375 -12.09375,-12.09375c0,-6.71875 5.375,-12.09375 12.09375,-12.09375c6.71875,0 12.09375,5.375 12.09375,12.09375c0,6.71875 -5.375,12.09375 -12.09375,12.09375zM68.53125,64.5c-2.28437,0 -4.03125,1.74688 -4.03125,4.03125c0,2.28437 1.74688,4.03125 4.03125,4.03125c2.28437,0 4.03125,-1.74688 4.03125,-4.03125c0,-2.28437 -1.74688,-4.03125 -4.03125,-4.03125z" fill="#ffffff"></path><path d="M103.46875,95.40625c-4.4528,0 -8.0625,3.6097 -8.0625,8.0625c0,4.4528 3.6097,8.0625 8.0625,8.0625c4.4528,0 8.0625,-3.6097 8.0625,-8.0625c0,-4.4528 -3.6097,-8.0625 -8.0625,-8.0625z" fill="#e74c3c"></path><path d="M103.46875,115.5625c-6.71875,0 -12.09375,-5.375 -12.09375,-12.09375c0,-6.71875 5.375,-12.09375 12.09375,-12.09375c6.71875,0 12.09375,5.375 12.09375,12.09375c0,6.71875 -5.375,12.09375 -12.09375,12.09375zM103.46875,99.4375c-2.28437,0 -4.03125,1.74688 -4.03125,4.03125c0,2.28437 1.74688,4.03125 4.03125,4.03125c2.28437,0 4.03125,-1.74688 4.03125,-4.03125c0,-2.28437 -1.74688,-4.03125 -4.03125,-4.03125zM76.59375,100.64688c-0.94062,0 -1.88125,-0.26875 -2.6875,-1.075c-1.6125,-1.47812 -1.88125,-4.03125 -0.40313,-5.64375l29.5625,-33.45937c1.47813,-1.6125 4.03125,-1.88125 5.64375,-0.40312c1.6125,1.47813 1.88125,4.03125 0.40312,5.64375l-29.5625,33.45937c-0.67187,1.075 -1.88125,1.47812 -2.95625,1.47812zM65.84375,104.8125c-2.2264,0 -4.03125,1.80485 -4.03125,4.03125c0,2.2264 1.80485,4.03125 4.03125,4.03125c2.2264,0 4.03125,-1.80485 4.03125,-4.03125c0,-2.2264 -1.80485,-4.03125 -4.03125,-4.03125z" fill="#ffffff"></path><g fill="#ffffff"><path d="M65.84375,162.99687c-1.47813,0 -3.09062,-0.26875 -4.56875,-0.67187c-4.97187,-1.6125 -8.6,-5.50937 -9.80937,-10.61562l-1.88125,-8.0625c-0.80625,-3.225 -3.7625,-5.375 -6.9875,-5.10625l-8.19687,0.67188c-5.10625,0.40312 -10.07812,-1.88125 -13.16875,-6.04687c-3.09062,-4.16563 -3.7625,-9.54063 -1.88125,-14.37812l3.09062,-7.65938c1.20937,-3.09062 0.13437,-6.58437 -2.6875,-8.33125l-6.9875,-4.3c-4.43437,-2.6875 -6.9875,-7.39062 -6.9875,-12.63125c0,-5.24062 2.6875,-9.94375 6.9875,-12.63125l6.9875,-4.3c2.82187,-1.74688 3.89687,-5.24063 2.6875,-8.33125l-3.09063,-7.65938c-2.01562,-4.8375 -1.34375,-10.2125 1.74688,-14.37812c3.09062,-4.16563 7.92813,-6.45 13.16875,-6.04687l8.19687,0.67188c3.35938,0.26875 6.31563,-1.88125 6.9875,-5.10625l1.88125,-8.0625c1.20937,-4.97187 4.8375,-9.00312 9.80937,-10.61562c4.97187,-1.6125 10.2125,-0.5375 14.10938,2.82188l6.31562,5.375c2.55313,2.15 6.18125,2.15 8.73438,0v0l6.31563,-5.375c3.89688,-3.35937 9.27188,-4.43437 14.10938,-2.82188c4.8375,1.6125 8.6,5.50938 9.80937,10.61563l1.88125,8.0625c0.80625,3.225 3.7625,5.375 6.9875,5.10625l8.19687,-0.67187c5.10625,-0.40313 10.07813,1.88125 13.16875,6.04688c3.09062,4.16562 3.62812,9.54062 1.74687,14.37812l-3.09062,7.65938c-1.20938,3.09062 -0.13438,6.58437 2.6875,8.33125l6.9875,4.3c4.43438,2.6875 6.9875,7.39063 6.9875,12.63125c0,5.24063 -2.6875,9.94375 -6.9875,12.63125l-6.9875,4.3c-2.82188,1.74688 -3.89688,5.24063 -2.6875,8.33125l3.09062,7.65938c2.01563,4.8375 1.34375,10.2125 -1.74687,14.37812c-3.09063,4.16563 -7.92813,6.45 -13.16875,6.04688l-8.19687,-0.67187c-3.225,-0.26875 -6.31563,1.88125 -6.9875,5.10625l-1.88125,8.0625c-1.20937,4.97188 -4.8375,9.00313 -9.80937,10.61563c-4.97188,1.6125 -10.2125,0.5375 -14.10937,-2.82188l-6.31563,-5.375c-2.55312,-2.15 -6.18125,-2.15 -8.73437,0l-6.31562,5.375c-2.55312,2.28437 -6.04687,3.49375 -9.40625,3.49375zM43,130.47813c6.85312,0 12.76563,4.56875 14.37813,11.2875l1.88125,8.0625c0.5375,2.28438 2.15,4.03125 4.43438,4.8375c2.28438,0.67188 4.56875,0.26875 6.45,-1.34375l6.31562,-5.375c5.50938,-4.70312 13.57188,-4.70312 19.21563,0l6.31563,5.375c1.88125,1.6125 4.16562,2.01563 6.45,1.34375c2.28438,-0.67187 3.89688,-2.55313 4.43438,-4.8375l1.88125,-8.0625c1.74687,-7.12187 8.19687,-11.825 15.45312,-11.2875l8.19688,0.67188c2.41875,0.13437 4.56875,-0.80625 5.9125,-2.6875c1.34375,-1.88125 1.74688,-4.3 0.80625,-6.45l-3.09062,-7.65938c-2.82188,-6.71875 -0.26875,-14.37812 5.9125,-18.275l6.9875,-4.3c2.01563,-1.20938 3.225,-3.35937 3.225,-5.77813c0,-2.41875 -1.20937,-4.43438 -3.225,-5.77813l-6.9875,-4.3c-6.18125,-3.7625 -8.73437,-11.55625 -5.9125,-18.275l3.09062,-7.65938c0.94063,-2.15 0.67188,-4.56875 -0.80625,-6.45c-1.34375,-1.88125 -3.62812,-2.95625 -5.9125,-2.6875l-8.19688,0.67188c-7.25625,0.5375 -13.84062,-4.16563 -15.45312,-11.2875l-1.88125,-8.0625c-0.5375,-2.28438 -2.15,-4.03125 -4.43438,-4.8375c-2.28437,-0.67187 -4.56875,-0.26875 -6.45,1.34375l-6.31563,5.375c-5.50937,4.70313 -13.57187,4.70313 -19.21562,0l-6.31563,-5.375c-1.88125,-1.6125 -4.16562,-2.01562 -6.45,-1.34375c-2.28438,0.67188 -3.89688,2.55313 -4.43437,4.8375l-1.88125,8.0625c-1.74687,7.12188 -8.19687,11.825 -15.45312,11.2875l-8.33125,-0.67187c-2.41875,-0.13438 -4.56875,0.80625 -5.9125,2.6875c-1.34375,1.88125 -1.74688,4.3 -0.80625,6.45l3.09062,7.65938c2.82188,6.71875 0.26875,14.37812 -5.9125,18.275l-6.9875,4.3c-2.01563,1.20938 -3.225,3.35938 -3.225,5.77813c0,2.41875 1.20937,4.43438 3.225,5.77813l6.9875,4.3c6.18125,3.7625 8.73438,11.55625 5.9125,18.275l-3.09062,7.525c-0.94063,2.15 -0.67187,4.56875 0.80625,6.45c1.34375,1.88125 3.62812,2.95625 5.9125,2.6875l8.19687,-0.67187c0.40313,0.13438 0.80625,0.13438 1.20938,0.13438z"></path></g></g></g></svg>
+				</div>
+				<span class="font-black text-black text-xl italic">Promo</span>
+			</div>
+		</div>
+	</div>
+	<div class="sm:w-full md:w-full lg:w-9/12 xl:w-9/12 h-10 bg-transparent">
+		<div class="w-full h-1 bg-gray-300 mt-6">
+		</div>
+	</div>
+</div>
+
+<div class="flex flex-wrap bg-transparent">
+	<div class="w-full h-auto px-0 xl:px-4 py-2">
+		<div class="px-2 xl:px-10">
+			<div class="flex justify-center bg-transparent">
+			  <div class="py-2">
+				  <div class="bg-white border h-auto w-full shadow hover:shadow-lg">
+				  	<div class="flex justify-center">
+				  		<img class="h-auto" src="https://dxclnrbvyw82b.cloudfront.net/images/di/upload/20200807/30722701-0f2a-4525-bb91-511272381006/22/dbs.jpg" alt="placeholder+image">
+				  	</div>
+				  </div>
+			  </div>
+			  <div class="py-2">
+				  <div class="bg-white border h-auto w-full shadow hover:shadow-lg">
+				  	<div class="flex justify-center">
+				  		<img class="h-auto" src="https://dxclnrbvyw82b.cloudfront.net/images/di/upload/20200806/8fe27f29-8ca2-4642-ad00-f23ca41d7631/34/EC%20Onlineshopping.jpg" alt="placeholder+image">
+				  	</div>
+				  </div>
+			  </div>
+			</div>
+
+			<div class="flex justify-center bg-transparent px-2">
+			  <div class="py-2 px-3">
+				  <div class="bg-white border h-auto w-auto shadow hover:shadow-lg">
+				  	<div class="flex justify-center">
+				  		<img class="h-auto" src="https://dxclnrbvyw82b.cloudfront.net/images/di/upload/20200806/8fe27f29-8ca2-4642-ad00-f23ca41d7631/44/telkomselbanner.jpg" alt="placeholder+image">
+				  	</div>
+				  </div>
+			  </div>
+			  <div class="py-2 px-3">
+				  <div class="bg-white border h-auto w-auto shadow hover:shadow-lg">
+				  	<div class="flex justify-center">
+				  		<img class="h-auto" src="https://dxclnrbvyw82b.cloudfront.net/images/di/upload/20200806/8fe27f29-8ca2-4642-ad00-f23ca41d7631/42/[EC_MC720pSquareThumbnail.jpg" alt="placeholder+image">
+				  	</div>
+				  </div>
+			  </div>
+			  <div class="py-2 px-3">
+				  <div class="bg-white border h-auto w-auto shadow hover:shadow-lg">
+				  	<div class="flex justify-center">
+				  		<img class="h-auto" src="https://dxclnrbvyw82b.cloudfront.net/images/di/upload/20200806/4e3cf94e-3d71-4afe-9fd8-c8da02c4152e/12/FAVE.jpg" alt="placeholder+image">
+				  	</div>
+				  </div>
+			  </div>
+			  <div class="py-2 px-3">
+				  <div class="bg-white border h-auto w-auto shadow hover:shadow-lg">
+				  	<div class="flex justify-center">
+				  		<img class="h-auto" src="https://dxclnrbvyw82b.cloudfront.net/images/di/upload/20200806/4e3cf94e-3d71-4afe-9fd8-c8da02c4152e/10/blibli%20rewards.jpg" alt="placeholder+image">
+				  	</div>
+				  </div>
+			  </div>
+			</div>
+
+			<div class="flex justify-center bg-transparent">
+			  <div class="py-2">
+				  <div class="bg-white border h-auto w-full shadow hover:shadow-lg">
+				  	<div class="flex justify-center">
+				  		<img class="h-auto" src="https://dxclnrbvyw82b.cloudfront.net/images/di/upload/20200813/30722701-0f2a-4525-bb91-511272381006/293/EC%20Additional%20Banner.jpg" alt="placeholder+image">
+				  	</div>
+				  </div>
+			  </div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="flex flex-wrap hidden xl:block">
+	<div class="w-full h-10 px-8 bg-transparent">
+		<div class="px-10">
+			<div class="flex py-1">
+				<div class="w-full h-auto">
+					<ul class="flex">
+					  <li class="flex-1 mr-2 border">
+					    <a class="text-center block border border py-2 px-4 bg-transparent hover:bg-gray-200 font-semibold" href="#">Best Items</a>
+					  </li>
+					  <li class="flex-1 border">
+					    <a class="text-center block border border py-2 px-4 bg-transparent hover:bg-gray-200" href="#">Hot Items</a>
+					  </li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="flex flex-wrap bg-transparent hidden xl:block">
+	<div class="w-full h-auto px-6 py-2">
+		<div class="flex justify-center bg-transparent px-8">
+		<div class="grid grid-cols-5 gap-5 mt-4">
+		  <div>
+			  <div class="bg-white border h-auto w-56 py-2 shadow hover:shadow-lg">
+			  	<div class="flex justify-center">
+			  		<img class="h-48" src="https://dxclnrbvyw82b.cloudfront.net/images/product/web/98/95/85/00/0/000000859598_01_285.jpg" alt="placeholder+image">
+			  	</div>
+		  		<div class="w-full py-2 h-8">
+		  			<span class="text-sm ml-6 text-left font-semibold">Astalift</span>
+		  		</div>
+		  		<div class="w-full mt-2 h-10 px-6">
+		  			<p class="text-xs leading-none text-left">
+		  				Astalift Jelly Aquarista 60gr 2pcs FREE 3 Minis (Random) + 1 Pouch
+		  			</p>
+		  		</div>
+		  		<div class="w-full py-2 h-auto px-6 mt-2 sm:hidden md:hidden lg:block xl:block">
+		  			<div class="flex flex-wrap">
+		  				<div class="w-1/2">
+		  					<span class="inline-block bg-red-600 rounded-full px-3 py-1 text-xs font-semibold text-white mr-2">39%</span>
+		  				</div>
+		  				<div class="w-1/2">
+		  					<div class="flex justify-end">
+		  						<div class="w-full text-right">
+				  					<div class="block">
+				  						<p class="leading-none">
+				  						<span class="text-xs font-semibold line-through">Rp 3.800.000</span><br>
+				  						<span class="text-xs text-red-600 font-bold">Rp 2.300.000</span>
+				  						</p>
+				  					</div>
+		  						</div>
+		  					</div>
+		  				</div>
+		  			</div>
+		  		</div>
+			  </div>
+		  </div>
+		  <div>
+			  <div class="bg-white border h-auto w-56 py-2 shadow hover:shadow-lg">
+			  	<div class="flex justify-center">
+			  		<img class="h-48" src="https://dxclnrbvyw82b.cloudfront.net/images/product/web/26/75/85/00/0/000000857526_01_285.jpg" alt="placeholder+image">
+			  	</div>
+		  		<div class="w-full py-2 h-8">
+		  			<span class="text-sm ml-6 text-left font-semibold">Swisse</span>
+		  		</div>
+		  		<div class="w-full mt-2 h-10 px-6">
+		  			<p class="text-xs leading-none text-left">
+		  				Swisse Ultiboost Vitamin C + Manuka Honey 120 Tablet
+		  			</p>
+		  		</div>
+		  		<div class="w-full py-2 h-auto px-6 mt-2 sm:hidden md:hidden lg:block xl:block">
+		  			<div class="flex flex-wrap">
+		  				<div class="w-1/2">
+		  					<span class="inline-block bg-red-600 rounded-full px-3 py-1 text-xs font-semibold text-white mr-2">11%</span>
+		  				</div>
+		  				<div class="w-1/2">
+		  					<div class="flex justify-end">
+		  						<div class="w-full text-right">
+				  					<div class="block">
+				  						<p class="leading-none">
+				  						<span class="text-xs font-semibold line-through">Rp 280.000</span><br>
+				  						<span class="text-xs text-red-600 font-bold">Rp 249.300</span>
+				  						</p>
+				  					</div>
+		  						</div>
+		  					</div>
+		  				</div>
+		  			</div>
+		  		</div>
+			  </div>
+		  </div>
+		  <div>
+			  <div class="bg-white border h-auto w-56 py-2 shadow hover:shadow-lg">
+			  	<div class="flex justify-center">
+			  		<img class="h-48" src="https://dxclnrbvyw82b.cloudfront.net/images/product/web/93/75/84/00/0/000000847593_01_285.jpg" alt="placeholder+image">
+			  	</div>
+		  		<div class="w-full py-2 h-8">
+		  			<span class="text-sm ml-6 text-left font-semibold">Kiehls</span>
+		  		</div>
+		  		<div class="w-full mt-2 h-10 px-6">
+		  			<p class="text-xs leading-none text-left">
+		  				Kiehls Ultra Facial Cleanser 75ml ++
+		  			</p>
+		  		</div>
+		  		<div class="w-full py-2 h-auto px-6 mt-2 sm:hidden md:hidden lg:block xl:block">
+		  			<div class="flex flex-wrap">
+		  				<div class="w-1/2">
+		  					<span class="inline-block bg-red-600 rounded-full px-3 py-1 text-xs font-semibold text-white mr-2">29%</span>
+		  				</div>
+		  				<div class="w-1/2">
+		  					<div class="flex justify-end">
+		  						<div class="w-full text-right">
+				  					<div class="block">
+				  						<p class="leading-none">
+				  						<span class="text-xs font-semibold line-through">Rp 1.400.000</span><br>
+				  						<span class="text-xs text-red-600 font-bold">Rp 1.000.000</span>
+				  						</p>
+				  					</div>
+		  						</div>
+		  					</div>
+		  				</div>
+		  			</div>
+		  		</div>
+			  </div>
+		  </div>
+		  <div>
+			  <div class="bg-white border h-auto w-56 py-2 shadow hover:shadow-lg">
+			  	<div class="flex justify-center">
+			  		<img class="h-48" src="https://dxclnrbvyw82b.cloudfront.net/images/product/web/04/24/84/00/0/000000842404_01_285.png" alt="placeholder+image">
+			  	</div>
+		  		<div class="w-full py-2 h-8">
+		  			<span class="text-sm ml-6 text-left font-semibold">Puristic</span>
+		  		</div>
+		  		<div class="w-full mt-2 h-10 px-6">
+		  			<p class="text-xs leading-none text-left">
+		  				Puristic Anti-Virus
+		  			</p>
+		  		</div>
+		  		<div class="w-full py-2 h-12 px-6 mt-2 sm:hidden md:hidden lg:block xl:block">
+		  			<div class="flex flex-wrap">
+		  				<div class="w-full">
+		  					<div class="flex justify-start">
+		  						<div class="w-full text-left">
+				  					<div class="block">
+				  						<p class="leading-none">
+				  						<span class="text-xs text-red-600 font-bold">Rp 299.000</span>
+				  						</p>
+				  					</div>
+		  						</div>
+		  					</div>
+		  				</div>
+		  			</div>
+		  		</div>
+			  </div>
+		  </div>
+		  <div>
+			  <div class="bg-white border h-auto w-56 py-2 shadow hover:shadow-lg">
+			  	<div class="flex justify-center">
+			  		<img class="h-48" src="https://dxclnrbvyw82b.cloudfront.net/images/product/web/29/88/79/00/0/000000798829_01_285.jpg" alt="placeholder+image">
+			  	</div>
+		  		<div class="w-full py-2 h-8">
+		  			<span class="text-sm ml-6 text-left font-semibold">Laneige</span>
+		  		</div>
+		  		<div class="w-full mt-2 h-10 px-6">
+		  			<p class="text-xs leading-none text-left">
+		  				Laneige Perfect Renew Trial Set (OL20)
+		  			</p>
+		  		</div>
+		  		<div class="w-full py-2 h-auto px-6 mt-2 sm:hidden md:hidden lg:block xl:block">
+		  			<div class="flex flex-wrap">
+		  				<div class="w-1/2">
+		  					<span class="inline-block bg-red-600 rounded-full px-3 py-1 text-xs font-semibold text-white mr-2">32%</span>
+		  				</div>
+		  				<div class="w-1/2">
+		  					<div class="flex justify-end">
+		  						<div class="w-full text-right">
+				  					<div class="block">
+				  						<p class="leading-none">
+				  						<span class="text-xs font-semibold line-through">Rp 792.500</span><br>
+				  						<span class="text-xs text-red-600 font-bold">Rp 540.000</span>
+				  						</p>
+				  					</div>
+		  						</div>
+		  					</div>
+		  				</div>
+		  			</div>
+		  		</div>
+			  </div>
+			</div>
+		  </div>
+		</div>
+
+
+		<div class="flex justify-center bg-transparent">
+		  <div class="py-2">
+			  <div class="bg-white border h-auto w-full shadow hover:shadow-lg">
+			  	<div class="flex justify-center">
+			  		<img class="h-auto" src="https://dxclnrbvyw82b.cloudfront.net/images/di/upload/20200813/30722701-0f2a-4525-bb91-511272381006/307/iHYPE_ECAdditional_88.jpg" alt="placeholder+image">
+			  	</div>
+			  </div>
+		  </div>
+		</div>
+	</div>
+</div>
+
+<div class="flex flex-wrap hidden xl:block">
+	<div class="sm:w-full md:w-full lg:w-3/12 xl:w-3/12 h-10 px-6 bg-transparent">
+		<div class="px-10">
+			<div class="flex py-1">
+				<span class="font-black text-gray-800 text-xl">You'll Want These</span>
+			</div>
+		</div>
+	</div>
+	<div class="sm:w-full md:w-full lg:w-9/12 xl:w-9/12 h-10 bg-transparent">
+		<div class="w-full h-1 bg-gray-300 mt-6">
+		</div>
+	</div>
+</div>
+
+<div class="flex flex-wrap bg-transparent hidden xl:block">
+	<div class="w-full h-auto px-6 py-2">
+		<div class="flex justify-center bg-transparent px-8">
+			<div class="grid grid-cols-5 gap-5">
+			  <div>
+				  <div class="bg-white border h-auto sm:w-32 md:w-48 lg:w-56 xl:w-56 py-2 shadow hover:shadow-lg">
+				  	<div class="flex justify-center">
+				  		<img class="sm:h-auto md:h-auto lg:h-48" src="https://dxclnrbvyw82b.cloudfront.net/images/product/web/50/79/77/00/0/000000777950_01_285.jpg" alt="placeholder+image">
+				  	</div>
+			  		<div class="w-full py-2 h-8">
+			  			<span class="text-sm ml-6 text-left font-semibold">MARHEN.J</span>
+			  		</div>
+			  		<div class="w-full mt-2 h-10 px-6">
+			  			<p class="text-xs leading-none text-left">
+			  				Marhen J Ludy Bag - Indi Pink
+			  			</p>
+			  		</div>
+			  		<div class="w-full py-2 h-auto px-6 mt-2 sm:hidden md:hidden lg:block xl:block">
+			  			<div class="flex flex-wrap">
+			  				<div class="w-1/2">
+			  					<span class="inline-block bg-red-600 rounded-full px-3 py-1 text-xs font-semibold text-white mr-2">15%</span>
+			  				</div>
+			  				<div class="w-1/2">
+			  					<div class="flex justify-end">
+			  						<div class="w-full text-right">
+					  					<div class="block">
+					  						<p class="leading-none">
+					  						<span class="text-xs font-semibold line-through">Rp 2.305.500</span><br>
+					  						<span class="text-xs text-red-600 font-bold">Rp 1.959.000</span>
+					  						</p>
+					  					</div>
+			  						</div>
+			  					</div>
+			  				</div>
+			  			</div>
+			  		</div>
+				  </div>
+			  </div>
+
+			  <div>
+				  <div class="bg-white border h-auto sm:w-32 md:w-48 lg:w-56 xl:w-56 py-2 shadow hover:shadow-lg">
+				  	<div class="flex justify-center">
+				  		<img class="sm:h-auto md:h-auto lg:h-48" src="https://dxclnrbvyw82b.cloudfront.net/images/product/web/91/78/82/00/0/000000827891_01_285.jpg" alt="placeholder+image">
+				  	</div>
+			  		<div class="w-full py-2 h-8">
+			  			<span class="text-sm ml-6 text-left font-semibold">Conamor</span>
+			  		</div>
+			  		<div class="w-full mt-2 h-10 px-6">
+			  			<p class="text-xs leading-none text-left">
+			  				Conamor New May Mini Bag - Yellow
+			  			</p>
+			  		</div>
+			  		<div class="w-full py-2 h-12 px-6 mt-2 sm:hidden md:hidden lg:block xl:block">
+			  			<div class="flex flex-wrap">
+			  				<div class="w-full">
+			  					<div class="flex justify-start">
+			  						<div class="w-full text-left">
+					  					<div class="block">
+					  						<p class="leading-none">
+					  						<span class="text-xs text-red-600 font-bold">Rp 899.000</span>
+					  						</p>
+					  					</div>
+			  						</div>
+			  					</div>
+			  				</div>
+			  			</div>
+			  		</div>
+				  </div>
+			  </div>
+			  <div>
+				  <div class="bg-white border h-auto sm:w-32 md:w-48 lg:w-56 xl:w-56 py-2 shadow hover:shadow-lg">
+				  	<div class="flex justify-center">
+				  		<img class="sm:h-auto md:h-auto lg:h-48" src="https://dxclnrbvyw82b.cloudfront.net/images/product/web/37/51/81/00/0/000000815137_01_285.png" alt="placeholder+image">
+				  	</div>
+			  		<div class="w-full py-2 h-8">
+			  			<span class="text-sm ml-6 text-left font-semibold">MLB</span>
+			  		</div>
+			  		<div class="w-full mt-2 h-10 px-6">
+			  			<p class="text-xs leading-none text-left">
+			  				MLB New York Yankees Sneakers - Big Ball Chunky Mickey Black
+			  			</p>
+			  		</div>
+			  		<div class="w-full py-2 h-auto px-6 mt-2 sm:hidden md:hidden lg:block xl:block">
+			  			<div class="flex flex-wrap">
+			  				<div class="w-1/2">
+			  					<span class="inline-block bg-red-600 rounded-full px-3 py-1 text-xs font-semibold text-white mr-2">10%</span>
+			  				</div>
+			  				<div class="w-1/2">
+			  					<div class="flex justify-end">
+			  						<div class="w-full text-right">
+					  					<div class="block">
+					  						<p class="leading-none">
+					  						<span class="text-xs font-semibold line-through">Rp 1.892.500</span><br>
+					  						<span class="text-xs text-red-600 font-bold">Rp 1.740.000</span>
+					  						</p>
+					  					</div>
+			  						</div>
+			  					</div>
+			  				</div>
+			  			</div>
+			  		</div>
+				  </div>
+			  </div>
+			  <div>
+				  <div class="bg-white border h-auto sm:w-32 md:w-48 lg:w-56 xl:w-56 py-2 shadow hover:shadow-lg">
+				  	<div class="flex justify-center">
+				  		<img class="sm:h-auto md:h-auto lg:h-48" src="https://dxclnrbvyw82b.cloudfront.net/images/product/web/66/66/78/00/0/000000786666_01_285.png" alt="placeholder+image">
+				  	</div>
+			  		<div class="w-full py-2 h-8">
+			  			<span class="text-sm ml-6 text-left font-semibold">ADLV Acme De La Vie</span>
+			  		</div>
+			  		<div class="w-full mt-2 h-10 px-6">
+			  			<p class="text-xs leading-none text-left">
+			  				ADLV Acme De La Vie Baby Face Short Sleeve T-Shirt White - Donuts 3
+			  			</p>
+			  		</div>
+			  		<div class="w-full py-2 h-12 px-6 mt-2 sm:hidden md:hidden lg:block xl:block">
+			  			<div class="flex flex-wrap">
+			  				<div class="w-full">
+			  					<div class="flex justify-start">
+			  						<div class="w-full text-left">
+					  					<div class="block">
+					  						<p class="leading-none">
+					  						<span class="text-xs text-red-600 font-bold">Rp 954.000</span>
+					  						</p>
+					  					</div>
+			  						</div>
+			  					</div>
+			  				</div>
+			  			</div>
+			  		</div>
+				  </div>
+			  </div>
+			  <div>
+				  <div class="bg-white border h-auto sm:w-32 md:w-48 lg:w-56 xl:w-56 py-2 shadow hover:shadow-lg">
+				  	<div class="flex justify-center">
+				  		<img class="sm:h-auto md:h-auto lg:h-48 xl:h-48" src="https://dxclnrbvyw82b.cloudfront.net/images/product/web/43/50/54/00/0/000000545043_01_285.jpg" alt="placeholder+image">
+				  	</div>
+			  		<div class="w-full py-2 h-8">
+			  			<span class="text-sm ml-6 text-left font-semibold">Thule</span>
+			  		</div>
+			  		<div class="w-full mt-2 h-10 px-6">
+			  			<p class="text-xs leading-none text-left">
+			  				Thule EnRoute 3 Tas Laptop Backpack 23L TEBP 316 – Dark Forest
+			  			</p>
+			  		</div>
+			  		<div class="w-full py-2 h-auto px-6 mt-2 sm:hidden md:hidden lg:block xl:block">
+			  			<div class="flex flex-wrap">
+			  				<div class="w-1/2">
+			  					<span class="inline-block bg-red-600 rounded-full px-3 py-1 text-xs font-semibold text-white mr-2">19%</span>
+			  				</div>
+			  				<div class="w-1/2">
+			  					<div class="flex justify-end">
+			  						<div class="w-full text-right">
+					  					<div class="block">
+					  						<p class="leading-none">
+					  						<span class="text-xs font-semibold line-through">Rp 2.092.500</span><br>
+					  						<span class="text-xs text-red-600 font-bold">Rp 1.697.000</span>
+					  						</p>
+					  					</div>
+			  						</div>
+			  					</div>
+			  				</div>
+			  			</div>
+			  		</div>
+				  </div>
+			  </div>
+			</div>
+		</div>
+
+		<div class="flex justify-center bg-transparent">
+		  <div class="py-2">
+			  <div class="bg-white border h-auto w-full shadow hover:shadow-lg">
+			  	<div class="flex justify-center">
+			  		<img class="h-auto" src="https://dxclnrbvyw82b.cloudfront.net/images/di/upload/20200805/5f25797b-6a6b-4cf7-b620-0a4236214306/80/EC%20Additional%20Banner.jpg" alt="placeholder+image">
+			  	</div>
+			  </div>
+		  </div>
+		</div>
+	</div>
+</div>
+
+
+<div class="flex flex-wrap">
+	<div class="sm:w-full md:w-full lg:w-3/12 xl:w-3/12 h-10 px-0 xl:px-6 bg-transparent">
+		<div class="px-2 xl:px-10">
+			<div class="flex py-1">
+				<span class="font-black text-gray-800 text-xl">Brand</span>
+			</div>
+		</div>
+	</div>
+	<div class="sm:w-full md:w-full lg:w-9/12 xl:w-9/12 h-10 bg-transparent">
+		<div class="w-full h-1 bg-gray-300 mt-6">
+		</div>
+	</div>
+</div>
+
+<div class="flex flex-wrap bg-transparent">
+	<div class="w-full h-auto px-0 xl:px-6 py-2">
+		<div class="flex justify-center bg-transparent px-2 xl:px-8">
+			<div class="grid grid-cols-7 gap-0">
+			  <div>
+				  <div class="bg-white border h-auto w-auto py-2 shadow hover:shadow-lg">
+				  	<div class="flex justify-center">
+				  		<img class="h-auto" src="https://dxclnrbvyw82b.cloudfront.net/images/di/upload/20190408/7573f164-4da0-4d83-841c-036cd02427e1/188/marhenj.jpg" alt="placeholder+image">
+				  	</div>
+				  </div>
+			  </div>
+			  <div>
+				  <div class="bg-white border h-auto w-auto py-2 shadow hover:shadow-lg">
+				  	<div class="flex justify-center">
+				  		<img class="h-auto" src="https://dxclnrbvyw82b.cloudfront.net/images/di/upload/20200809/ff4c6355-d82a-46e3-b66d-03632499681e/80/sba%20logo.jpg" alt="placeholder+image">
+				  	</div>
+				  </div>
+			  </div>
+			  <div>
+				  <div class="bg-white border h-auto w-auto py-2 shadow hover:shadow-lg">
+				  	<div class="flex justify-center">
+				  		<img class="h-auto" src="https://dxclnrbvyw82b.cloudfront.net/images/di/upload/20200513/e61376ac-8394-473f-8f67-48c35dc35617/10/aldo%20170x121.jpg" alt="placeholder+image">
+				  	</div>
+				  </div>
+			  </div>
+			  <div>
+				  <div class="bg-white border h-auto w-auto py-2 shadow hover:shadow-lg">
+				  	<div class="flex justify-center">
+				  		<img class="h-auto" src="https://dxclnrbvyw82b.cloudfront.net/images/di/upload/20190408/7573f164-4da0-4d83-841c-036cd02427e1/201/elle.jpg" alt="placeholder+image">
+				  	</div>
+				  </div>
+			  </div>
+			  <div>
+				  <div class="bg-white border h-auto w-auto py-2 shadow hover:shadow-lg">
+				  	<div class="flex justify-center">
+				  		<img class="h-auto" src="https://dxclnrbvyw82b.cloudfront.net/images/di/upload/20200520/0681455c-bea0-46ef-a695-b389053e733a/158/Laneige.jpg" alt="placeholder+image">
+				  	</div>
+				  </div>
+			  </div>
+			  <div>
+				  <div class="bg-white border h-auto w-auto py-2 shadow hover:shadow-lg">
+				  	<div class="flex justify-center">
+				  		<img class="h-auto" src="https://dxclnrbvyw82b.cloudfront.net/images/di/upload/20200520/0681455c-bea0-46ef-a695-b389053e733a/160/Missha.jpg" alt="placeholder+image">
+				  	</div>
+				  </div>
+			  </div>
+			  <div>
+				  <div class="bg-white border h-auto w-auto py-2 shadow hover:shadow-lg">
+				  	<div class="flex justify-center">
+				  		<img class="h-auto" src="https://dxclnrbvyw82b.cloudfront.net/images/di/upload/20200520/0681455c-bea0-46ef-a695-b389053e733a/162/SK-II.jpg" alt="placeholder+image">
+				  	</div>
+				  </div>
+			  </div>
+
+			  <div>
+				  <div class="bg-white border h-auto w-auto py-2 shadow hover:shadow-lg">
+				  	<div class="flex justify-center">
+				  		<img class="h-auto" src="https://dxclnrbvyw82b.cloudfront.net/images/di/upload/20200520/ae97a83c-1ef1-4660-a22d-6ddaa60c7bb4/137/Pyunkang%20Yul.jpg" alt="placeholder+image">
+				  	</div>
+				  </div>
+			  </div>
+			  <div>
+				  <div class="bg-white border h-auto w-auto py-2 shadow hover:shadow-lg">
+				  	<div class="flex justify-center">
+				  		<img class="h-auto" src="https://dxclnrbvyw82b.cloudfront.net/images/di/upload/20190215/192f67dc-a60b-4a84-9fbb-0e40a5c2247b/97/JW_BrandMallFooter_JBLbyHarman.jpg" alt="placeholder+image">
+				  	</div>
+				  </div>
+			  </div>
+			  <div>
+				  <div class="bg-white border h-auto w-auto py-2 shadow hover:shadow-lg">
+				  	<div class="flex justify-center">
+				  		<img class="h-auto" src="https://dxclnrbvyw82b.cloudfront.net/images/di/upload/20190215/192f67dc-a60b-4a84-9fbb-0e40a5c2247b/83/JW_BrandMallFooter_SKII.jpg" alt="placeholder+image">
+				  	</div>
+				  </div>
+			  </div>
+			  <div>
+				  <div class="bg-white border h-auto w-auto py-2 shadow hover:shadow-lg">
+				  	<div class="flex justify-center">
+				  		<img class="h-auto" src="https://dxclnrbvyw82b.cloudfront.net/images/di/upload/20190408/7573f164-4da0-4d83-841c-036cd02427e1/187/lego.jpg" alt="placeholder+image">
+				  	</div>
+				  </div>
+			  </div>
+			  <div>
+				  <div class="bg-white border h-auto w-auto py-2 shadow hover:shadow-lg">
+				  	<div class="flex justify-center">
+				  		<img class="h-auto" src="https://dxclnrbvyw82b.cloudfront.net/images/di/upload/20200415/efc00a8b-0354-4e5d-b75a-16cdfcbb6915/97/iHype.jpg" alt="placeholder+image">
+				  	</div>
+				  </div>
+			  </div>
+			  <div>
+				  <div class="bg-white border h-auto w-auto py-2 shadow hover:shadow-lg">
+				  	<div class="flex justify-center">
+				  		<img class="h-auto" src="https://dxclnrbvyw82b.cloudfront.net/images/di/upload/20190215/192f67dc-a60b-4a84-9fbb-0e40a5c2247b/81/JW_BrandMallFooter_Vespa.jpg" alt="placeholder+image">
+				  	</div>
+				  </div>
+			  </div>
+			  <div>
+				  <div class="bg-white border h-auto w-auto py-2 shadow hover:shadow-lg">
+				  	<div class="flex justify-center">
+				  		<img class="h-auto" src="https://dxclnrbvyw82b.cloudfront.net/images/di/upload/20200324/52ce27be-80ea-4c85-a21f-731f01c2c91c/503/[AP]%20BRAND%20Mall%20Footer%20Smiggle.jpg" alt="placeholder+image">
+				  	</div>
+				  </div>
+			  </div>
+			</div>
+		</div>
+
+		<div class="flex justify-center bg-transparent">
+		  <div class="py-2">
+			  <div class="bg-white border h-auto w-full shadow hover:shadow-lg">
+			  	<div class="flex justify-center">
+			  		<img class="h-auto" src="https://dxclnrbvyw82b.cloudfront.net/images/di/upload/20200813/30722701-0f2a-4525-bb91-511272381006/289/ECAdditional.jpg" alt="placeholder+image">
+			  	</div>
+			  </div>
+		  </div>
+		</div>
+
+		<div class="flex justify-center bg-transparent">
+		  <div class="py-2">
+			  <div class="bg-white border h-auto w-full shadow hover:shadow-lg">
+			  	<div class="flex justify-center">
+			  		<img class="h-auto" src="https://dxclnrbvyw82b.cloudfront.net/images/di/upload/20200807/30722701-0f2a-4525-bb91-511272381006/34/ECAdditional.png" alt="placeholder+image">
+			  	</div>
+			  </div>
+		  </div>
+		</div>
+	</div>
+</div>
+</main>
+
+<footer class="footer relative" style="background-color: #f8f8f8;">
+    <div class="container mx-auto px-6 py-3">
+        <div class="flex flex-col items-center lg:w-1/2 xl:w-1/3 mx-auto pt-8 hidden">
+            <span class="text-2xl font-bold text-gray-800 mb-1">Subscribe</span>
+            <p class="text-teal-100 text-center">Receive the latest free components and templates</p>
+            <form action="#" class="flex sm:block mt-6 bg-white p-1 rounded" method="post">
+                <input type="hidden" name="_token" value="UBjnVL3zGwMPieL2nw5ldg02uL51p9FTgUjOeOMl">                
+                <input type="email" name="email" placeholder="Email address" class="py-3 px-3 text-gray-700 w-48 sm:w-64 focus:outline-none">
+                <input type="submit" value="Subscribe" class="bg-primary rounded text-gray-800 py-3 px-6 cursor-pointer">
+            </form>
+        </div>
+
+        <div class="sm:w-full sm:pl-8 mt-16 sm:mt-16 pr-4">
+            <a href="#"><img alt="Lotte" src="https://www.ilotte.com/static-root/images/common/footer_logo.png" class="h-8"></a>
+        </div>
+        <div class="sm:flex sm:mt-6">
+            <div class="sm:w-4/12 sm:pl-8 mt-8 sm:mt-0 pr-4">
+                <ul class="mt-2">
+				  <li class="uppercase font-semibold">Info Perusahaan​</li>
+				  <li class="mt-2 text-gray-600 text-xs">Tentang iLOTTE</li>
+				  <li class="mt-0 text-gray-600 text-xs">Karir</li>
+				  <li class="mt-0 text-gray-600 text-xs">Daftar Brand</li>
+				</ul>
+                <ul class="mt-4">
+				  <li class="uppercase font-semibold">Partnership dengan iLOTTE</li>
+				  <li class="mt-2 text-gray-600 text-xs">Menjadi Partner iLOTTE</li>
+				  <li class="mt-0 text-gray-600 text-xs">Rincian Permohonan</li>
+				  <li class="mt-0 text-gray-600 text-xs">Partnership</li>
+				</ul>
+                <ul class="mt-4">
+				  <li class="uppercase font-semibold">Kebijakan</li>
+				  <li class="mt-2 text-gray-600 text-xs">Syarat dan Ketentuan</li>
+				  <li class="mt-0 text-gray-600 text-xs">Kebijakan Privasi</li>
+				</ul>
+            </div>
+            <div class="mt-16 sm:mt-1 sm:w-8/12 sm:pr-16 flex flex-row">
+                <div class="flex flex-col w-8/12 sm:w-8/12 mr-4">
+                    <span class="font-bold text-gray-800 uppercase mb-2">Tips & Layanan</span>
+                    <div class="flex">
+                            <ul class="flex-1">
+				  				<li class="uppercase font-semibold text-xs">Cara Cerdas Berbelanja</li>
+							    <li class="mt-2 text-gray-600 text-xs">Fitur Special</li>
+							    <li class="mt-0 text-gray-600 text-xs">Cara Pesan & Bayar</li>
+							    <li class="mt-0 text-gray-600 text-xs">Pengiriman</li>
+							    <li class="mt-0 text-gray-600 text-xs">Pengembalian Produk & Dana</li>
+							    <li class="mt-0 text-gray-600 text-xs">Smart Membership</li>
+							    <li class="mt-0 text-gray-600 text-xs">iPoint</li>
+							    <li class="mt-0 text-gray-600 text-xs">L.POINT</li>
+                            </ul>
+                            <ul class="flex-1">
+				  				<li class="uppercase font-semibold text-xs">Customer Service</li>
+							    <li class="mt-2 text-gray-600 text-xs">Email Us</li>
+							    <li class="mt-0 text-gray-600 text-xs">Live Chat</li>
+							    <li class="mt-0 text-gray-600 text-xs">FAQ</li>
+							    <li class="mt-0 text-gray-600 text-xs">Newsletter</li>
+							    <li class="mt-0 text-black text-xs">1 500 757</li>
+                            </ul>
+                    </div>
+                </div>
+                <div class="flex flex-col">
+                    <span class="font-bold text-gray-800 uppercase mb-2">Find Me On</span>
+                    <div class="flex flex-row">
+					  <div class="rounded-full w-12 h-12 border-2 text-center mr-2 bg-transparent">
+					  	<div class="flex justify-center py-3">
+					  		<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+							width="20" height="20"
+							viewBox="0 0 172 172"
+							style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#cccccc"><path d="M110.08,37.84h17.2c1.89888,0 3.44,-1.54112 3.44,-3.44v-23.17528c0,-1.80256 -1.38632,-3.3024 -3.182,-3.42968c-5.47304,-0.38872 -16.16456,-0.91504 -23.85296,-0.91504c-21.12504,0 -34.88504,12.6592 -34.88504,35.66592v22.81408h-24.08c-1.89888,0 -3.44,1.54112 -3.44,3.44v24.08c0,1.89888 1.54112,3.44 3.44,3.44h24.08v65.36c0,1.89888 1.54112,3.44 3.44,3.44h24.08c1.89888,0 3.44,-1.54112 3.44,-3.44v-65.36h24.84368c1.7544,0 3.22672,-1.31752 3.41936,-3.0616l2.67632,-24.08c0.22704,-2.03648 -1.36912,-3.8184 -3.41936,-3.8184h-27.52v-17.2c0,-5.70008 4.61992,-10.32 10.32,-10.32z"></path></g></g></svg>
+					  	</div>
+					  </div>
+					  <div class="rounded-full w-12 h-12 border-2 text-center mr-2 bg-transparent">
+					  	<div class="flex justify-center py-3">
+					  		<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+							width="20" height="20"
+							viewBox="0 0 172 172"
+							style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#cccccc"><path d="M172.215,35.905c-6.35594,2.82188 -13.16875,4.71656 -20.33094,5.57656c7.31,-4.38063 12.92687,-11.31438 15.56062,-19.565c-6.82625,4.04469 -14.41844,6.9875 -22.4675,8.57312c-6.45,-6.88 -15.64125,-11.16656 -25.81344,-11.16656c-19.53812,0 -35.38094,15.82937 -35.38094,35.3675c0,2.76812 0.3225,5.46906 0.92719,8.0625c-29.40125,-1.47813 -55.45656,-15.56063 -72.91187,-36.96656c-3.05031,5.24062 -4.78375,11.31437 -4.78375,17.79125c0,12.26844 6.235,23.09906 15.73531,29.455c-5.805,-0.18813 -11.26062,-1.78719 -16.03094,-4.43438c0,0.14781 0,0.29563 0,0.44344c0,17.14625 12.20125,31.43031 28.36656,34.69562c-2.95625,0.80625 -6.08719,1.23625 -9.31219,1.23625c-2.28438,0 -4.50156,-0.215 -6.665,-0.645c4.515,14.04219 17.57625,24.295 33.04281,24.57719c-12.09375,9.48688 -27.34531,15.13063 -43.92719,15.13063c-2.86219,0 -5.67062,-0.16125 -8.42531,-0.49719c15.64125,10.05125 34.23875,15.89656 54.22031,15.89656c65.06438,0 100.64688,-53.89781 100.64688,-100.63344c0,-1.53187 -0.04031,-3.07719 -0.09406,-4.58219c6.90687,-4.98531 12.9,-11.22031 17.64344,-18.31531z"></path></g></g></svg>
+					  	</div>
+					  </div>
+					  <div class="rounded-full w-12 h-12 border-2 text-center mr-2 bg-transparent">
+					  	<div class="flex justify-center py-3">
+					  		<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+							width="20" height="20"
+							viewBox="0 0 172 172"
+							style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#cccccc"><path d="M55.04,10.32c-24.6648,0 -44.72,20.0552 -44.72,44.72v61.92c0,24.6648 20.0552,44.72 44.72,44.72h61.92c24.6648,0 44.72,-20.0552 44.72,-44.72v-61.92c0,-24.6648 -20.0552,-44.72 -44.72,-44.72zM127.28,37.84c3.784,0 6.88,3.096 6.88,6.88c0,3.784 -3.096,6.88 -6.88,6.88c-3.784,0 -6.88,-3.096 -6.88,-6.88c0,-3.784 3.096,-6.88 6.88,-6.88zM86,48.16c20.8808,0 37.84,16.9592 37.84,37.84c0,20.8808 -16.9592,37.84 -37.84,37.84c-20.8808,0 -37.84,-16.9592 -37.84,-37.84c0,-20.8808 16.9592,-37.84 37.84,-37.84zM86,55.04c-17.0624,0 -30.96,13.8976 -30.96,30.96c0,17.0624 13.8976,30.96 30.96,30.96c17.0624,0 30.96,-13.8976 30.96,-30.96c0,-17.0624 -13.8976,-30.96 -30.96,-30.96z"></path></g></g></svg>
+					  	</div>
+					  </div>
+					  <div class="rounded-full w-12 h-12 border-2 text-center mr-2 bg-transparent">
+					  	<div class="flex justify-center py-3">
+					  		<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+							width="20" height="20"
+							viewBox="0 0 172 172"
+							style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#cccccc"><path d="M154.45063,49.88c-1.37063,-7.56531 -7.90125,-13.07469 -15.48,-14.79469c-11.34125,-2.40531 -32.33063,-4.12531 -55.04,-4.12531c-22.69594,0 -44.02125,1.72 -55.37594,4.12531c-7.56531,1.72 -14.10937,6.88 -15.48,14.79469c-1.38406,8.6 -2.75469,20.64 -2.75469,36.12c0,15.48 1.37063,27.52 3.09063,36.12c1.38406,7.56531 7.91469,13.07469 15.48,14.79469c12.04,2.40531 32.68,4.12531 55.38937,4.12531c22.70938,0 43.34938,-1.72 55.38938,-4.12531c7.56531,-1.72 14.09594,-6.88 15.48,-14.79469c1.37062,-8.6 3.09062,-20.98937 3.44,-36.12c-0.69875,-15.48 -2.41875,-27.52 -4.13875,-36.12zM65.36,110.08v-48.16l41.96531,24.08z"></path></g></g></svg>
+					  	</div>
+					  </div>
+					</div>
+                    <div class="flex">
+                        <ul class="flex-1 mt-4">
+                            <li class="mb-1">
+                                <a href="#">Cheatsheet</a>
+                            </li>
+                            <li class="mb-1">
+                                <a href="#">Cheatsheet</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mx-auto px-6">
+        <div class="mt-16 border-t border-gray-200 flex flex-col items-center">
+            <div class="sm:w-2/3 text-center text-xs py-6">
+                <p class="text-xs text-black mb-2">© 2020 <span class="font-semibold uppercase">Ikziriv Art</span> Design • <a href="#">For Company</a> • PT Indo Lotte Makmur. All Right Reserved.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
